@@ -51,9 +51,11 @@ $(window).bind('scroll', function () {
     if ($(window).scrollTop() > pageHeight){
             $("#navbar").addClass('fixed');
             $("#design").addClass('top-offset');
+            // $('#logo').addClass('logo-fix');
         } else {
             $("#navbar").removeClass('fixed');
             $("#design").removeClass('top-offset');
+            // $('#logo').removeClass('logo-fix');
         }
   }     
 });

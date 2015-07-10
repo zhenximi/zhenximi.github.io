@@ -118,6 +118,20 @@ nav li {
   left: 0;
 }
 
+.navbar-default .navbar-brand {
+  background-image: url(../images/logo.png);
+  height: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 12px 12px 12px 12px!important;
+  opacity: 0;
+}
+
+.navbar-default.fixed .navbar-brand {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
 /*nav {
   z-index: 10;
   display: block;
@@ -208,7 +222,7 @@ and (max-width: 768px) {
   display: block;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
-  font-size: 10vw;
+  font-size: 6vw;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
@@ -240,8 +254,20 @@ and (max-width: 768px) {
   padding: 50px 20px;
   margin: 0 auto;
 }
+
+figurecaption.caption {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .7);
+}
+figurecaption.caption:hover {
+  transition: all 1s ease-in-out;
+}
 .caption h1 {
-  display: none;
 }
 
 
