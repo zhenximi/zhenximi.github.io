@@ -34,7 +34,7 @@ $(function() {
         var target = $('#design')
         $('html,body').animate({
               scrollTop: target.offset().top
-            }, 200);
+            }, 500);
         runonce = true;
         console.log('here');
       }

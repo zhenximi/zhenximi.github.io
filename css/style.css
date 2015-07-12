@@ -16,9 +16,9 @@ h1, h2, h3, h4, h5, h6, nav {
 
 /** Animations  **/
 .animated { 
-    animation-delay: 1s;
-    -webkit-animation-duration: 1s; 
-    animation-duration: 1s; 
+    animation-delay: .8s;
+    -webkit-animation-duration: .8s; 
+    animation-duration: .8s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-timing-function: ease-in-out; 
@@ -73,9 +73,9 @@ nav {
 
 .navbar {
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 10px -5px #232323;
+  /*box-shadow: 0 5px 10px -5px #232323;
     -moz-box-shadow: 0 5px 10px -5px #232323;
-    -webkit-box-shadow: 0 5px 10px -5px #232323;
+    -webkit-box-shadow: 0 5px 10px -5px #232323;*/
   z-index: 3;
   border: 0;
   border-radius: 0;
@@ -90,6 +90,10 @@ nav {
     float: none;
 }
 
+#nav-toggle {
+  margin: 0 3%;
+  border-bottom: 1px solid rgba(3, 3, 3, .85);
+}
 .navbar-default .navbar-nav .active a {
   background-color: #fff;
   background: transparent;
@@ -105,25 +109,36 @@ nav li {
   list-style: none;
     text-align: center;
     display: inline;
-    padding: 0px 10px;
+    padding: 0;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 300;
 }
 
+nav>li>a {
+  padding: 10px 8px;
+}
+
+@media (min-width: 768px)
+.navbar-nav>li>a {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
 
 .fixed {
   position: fixed !important;
   top: 0;
   left: 0;
+  opacity: .95;
 }
 
 .navbar-default .navbar-brand {
   background-image: url(../images/logo.png);
-  height: 80%;
+  height: 95%;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 12px 12px 12px 12px!important;
+  padding: 20px;
+  margin: 12px 12px 12px 0px!important;
   opacity: 0;
 }
 
@@ -200,19 +215,18 @@ and (max-width: 768px) {
   background-color: rgba(254,237,1,.3);
 }
 
-#welcome {
-  position: relative;
-  top: 30%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+#zhenxi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #frontpage h1 {
   display: block;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
@@ -222,14 +236,14 @@ and (max-width: 768px) {
   display: block;
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   vertical-align: center;
   text-transform: uppercase;
 }
 
 #design {
-  padding-top: 120px;
+  padding: 135px 0;
   display: block;
 }
 
@@ -240,37 +254,82 @@ and (max-width: 768px) {
 }
 
 .showcase {
-  border-radius: 2px;
   margin-bottom: 30px;
 }
 
-/*.project-cover {
+.project-cover {
+  position: relative;
+  background-color: #E0E0E0;
+}
 
+#tapture {
+  background-color: rgba(41, 182, 246, 1);
 
-  box-sizing: content-box;
-}*/
+}
 
+#pet-app {
+  background-color: rgba(66, 165, 245, 1);
+}
 
+#floracare {
+  background-color: rgba(212, 225, 87, 1);
+}
+
+#karkee {
+  background-color: rgba(255, 167, 38, 1);
+}
+
+#blob {
+  background-color: rgba(236, 64, 122, 1);
+}
+
+#mhcid-web {
+  background-color: rgba(126, 87, 194, 1);
+}
+
+#wekart {
+  background-color: rgba(38, 198, 218, 1);
+}
+
+#canvas {
+  background-color: rgba(255, 238, 88, 1);
+}
+
+#twd {
+  background-color: rgba(189, 189, 189, 1);
+}
 .project-info {
-  display: block;
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
+  opacity: 0;
+  background: rgba(176, 190, 197, .85);
   text-align: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, .7);
+  transition: all .3s ease-in-out;
 }
 
 .project-info:hover {
-  transition: all 1s ease-in-out;
+  opacity: 1;
 }
 
-figurecaption h1 {
+.text-wrap {
+ width: 100%;
+ height: 100%;
+ position: relative;
 }
 
-figurecaption span {
-
+.project-info span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
 }
+
+.project-info h1 {
+  font-size: 2em;
+}
+
 
 
