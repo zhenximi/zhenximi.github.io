@@ -8,8 +8,12 @@
 
 console.log('Hi, there!\nThank you for visiting my portifolio site.\nPlease contact me via zhenxi.mi@gmail.com.')
 
-// Reset last scroll position
+// Onload
+
 window.onload=function(){
+    $('#frontpage').addClass("fadeIn");
+    $('#frontpage').css('opacity',1);
+    // Reset last scroll position
     setTimeout(function(){
         scrollTo(0,-1);
     },0);

@@ -14,6 +14,72 @@ h1, h2, h3, h4, h5, h6, nav {
   margin: 0;
 }
 
+.block-triangle {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid #FFF;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 10;
+  animation: bounceTriangle 2.8s 1 ease-in-out; 
+  animation-delay: 1.4s;}
+
+@-webkit-keyframes bounceTriangle {
+  0% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; }
+
+  20% {
+    -webkit-transform: translateY(-10px);
+    opacity: 1; }
+
+  40% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; }
+
+  60% {
+    -webkit-transform: translateY(-10px);
+    opacity: 1; }
+
+  80% {
+    -webkit-transform: translateY(0px);
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes bounceTriangle {
+  0% {
+    transform: translateY(0px);
+    opacity: 1; }
+
+  20% {
+    transform: translateY(-10px);
+    opacity: 1; }
+
+  40% {
+    transform: translateY(0px);
+    opacity: 1; }
+
+  60% {
+    transform: translateY(-10px);
+    opacity: 1; }
+
+  80% {
+    transform: translateY(0px);
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } 
+    }
+
+
 /** Animations  **/
 .animated { 
     animation-delay: .8s;
