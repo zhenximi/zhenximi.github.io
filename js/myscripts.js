@@ -79,10 +79,12 @@ $(function() {
   var menuOffset = 50; //variable for menu height
   var wheight = $(window).height(); //get the height of the window
   if ($(window).width() > 768) {
-    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness  
+    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness 
+    $('.fullscreen').css('height', wheight); 
   } else {
-    $('.fullheight').css('height', wheight); //set to window tallness
     $("#navbar").addClass('fixed');
+    $('.fullheight').css('height', wheight); //set to window tallness
+    $('.fullscreen').css('height', wheight);
   }
   
 
@@ -90,7 +92,8 @@ $(function() {
   //adjust height of .fullheight elements on window resize
   $(window).resize(function() {
     wheight = $(window).height(); //get the height of the window
-    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness  
+    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness
+    $('.fullscreen').css('height', wheight);
   });
 
 });

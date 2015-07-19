@@ -14,122 +14,6 @@ h1, h2, h3, h4, h5, h6, nav {
   margin: 0;
 }
 
-.block-triangle {
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 20px solid #FFF;
-  bottom: 20px;
-  left: 50%;
-  margin-left: -15px;
-  z-index: 10;
-  animation: bounceTriangle 2.8s 1 ease-in-out; 
-  animation-delay: 1.4s;}
-
-@-webkit-keyframes bounceTriangle {
-  0% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; }
-
-  20% {
-    -webkit-transform: translateY(-10px);
-    opacity: 1; }
-
-  40% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; }
-
-  60% {
-    -webkit-transform: translateY(-10px);
-    opacity: 1; }
-
-  80% {
-    -webkit-transform: translateY(0px);
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } }
-
-@keyframes bounceTriangle {
-  0% {
-    transform: translateY(0px);
-    opacity: 1; }
-
-  20% {
-    transform: translateY(-10px);
-    opacity: 1; }
-
-  40% {
-    transform: translateY(0px);
-    opacity: 1; }
-
-  60% {
-    transform: translateY(-10px);
-    opacity: 1; }
-
-  80% {
-    transform: translateY(0px);
-    opacity: 1; }
-
-  100% {
-    opacity: 0; } 
-    }
-
-
-/** Animations  **/
-.animated { 
-    animation-delay: .8s;
-    -webkit-animation-duration: .8s; 
-    animation-duration: .8s; 
-    -webkit-animation-fill-mode: both; 
-    animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease-in-out; 
-    animation-timing-function: ease-in-out; 
-} 
-
-@-webkit-keyframes bounceInDown { 
-   0% { 
-       opacity: 0; 
-        -webkit-transform: translateY(-2000px); 
-    } 
-    60% { 
-        opacity: 1; 
-        -webkit-transform: translateY(30px); 
-    } 
-    80% { 
-        -webkit-transform: translateY(-10px); 
-    } 
-    100% { 
-        -webkit-transform: translateY(0); 
-    } 
-} 
-
-@keyframes bounceInDown { 
-    0% { 
-        opacity: 0; 
-        transform: translateY(-2000px); 
-    } 
-    60% { 
-        opacity: 1; 
-        transform: translateY(30px); 
-    } 
-    80% { 
-        transform: translateY(-10px); 
-    } 
-    100% { 
-        transform: translateY(0); 
-    } 
-} 
-
-.bounceInDown { 
-    -webkit-animation-name: bounceInDown; 
-    animation-name: bounceInDown; 
-}
-
 /**  Header Navigation **/
 nav {
   display: block;
@@ -281,11 +165,23 @@ and (max-width: 768px) {
   background-color: rgba(254,237,1,.3);
 }
 
-#zhenxi {
+.headline {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text-h {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+#next {
+  width: 100%;
+  height: 20%;
+  position: relative;
 }
 
 #frontpage h1 {
@@ -316,7 +212,7 @@ and (max-width: 768px) {
 
 /**  Showcase  **/
 .top-offset {
-/*  padding-top: 72px;*/
+  padding-top: 72px;
 }
 
 .showcase {
@@ -380,9 +276,9 @@ and (max-width: 768px) {
 }
 
 .text-wrap {
- width: 100%;
- height: 100%;
- position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .project-info span {
@@ -397,5 +293,21 @@ and (max-width: 768px) {
   font-size: 2em;
 }
 
+.avatar {
+  display: block;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
 
+#about {
+  background-color: rgba(76, 175, 80, 1);
+}
+
+#about p {
+  font-size: 1.1em;
+  color: white;
+  text-indent: 50px;
+}
 
