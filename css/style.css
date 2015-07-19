@@ -8,7 +8,7 @@ body{
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, nav {
+h1, h2, h3, h4, h5, h6, nav, p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin: 0;
@@ -67,12 +67,6 @@ nav li {
 
 nav>li>a {
   padding: 10px 8px;
-}
-
-@media (min-width: 768px)
-.navbar-nav>li>a {
-  padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 .fixed {
@@ -295,19 +289,81 @@ and (max-width: 768px) {
 
 .avatar {
   display: block;
+  cursor: zoom-in;
   border-radius: 50%;
   width: 200px;
   height: 200px;
   margin: 20px auto;
+  box-shadow: 0 3px 6px -3px #232323;
 }
 
 #about {
   background-color: rgba(76, 175, 80, 1);
 }
 
+p + p {
+  margin-top: 15px; 
+}
+
 #about p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: white;
-  text-indent: 50px;
+}
+
+
+/** Responsive media setting **/
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+
+/** Larger than normal phones **/
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+  header .navbar-collapse.in {
+    background-color: rgba(255, 255, 255, 1) !important;
+  }
+
+  #about p {
+    font-size: 1em;
+  }
+
+  #nav-toggle {
+    margin: 0 3%;
+    border: none;
+  }
+  
+  .navbar-default .navbar-brand {
+    padding: 12px;
+  }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .avatar {
+    display: block;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0px auto;
+    box-shadow: 0 2px 3px -2px #232323;
+  }
+
+  .top-offset {
+    padding-top: 50px;
+  }
+
+  #about p {
+    font-size: .62em;
+  }
 }
 

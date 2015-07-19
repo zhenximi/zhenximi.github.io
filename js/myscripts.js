@@ -19,6 +19,18 @@ window.onload=function(){
     },0);
 }
 
+//Fire CSS animations after page loaded
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
+
+//Fix the problem with menu didn't collapse after clicked 
+$(document).ready(function () {
+  $(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+  });
+});
+
 //Snapping section
 // $(document).ready(function() {
 //     $(document).scrollsnap({
@@ -67,7 +79,18 @@ $(window).bind('scroll', function () {
 $(function() {
   "use strict";
   $('body').scrollspy({
-    target: '#navbar'
+    target: '#navbar', offset:15
+  });
+  $("#myScrollspy").scrollspy({target: ".navbar"});
+    $(".navbar").on("activate.bs.scrollspy", function(){
+        var x = $(".nav li.active > a").text();
+        if (x == "ABOUT ME") {
+          $('.navbar').css('background-color', 'transparent'); 
+          $('#nav-toggle').css('border-bottom', '0px solid rgba(3, 3, 3, .85)'); 
+        } else {
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, 1)'); 
+          $('#nav-toggle').css('border-bottom', '1px solid rgba(3, 3, 3, .85)'); 
+        }
   });
 });
 
