@@ -198,7 +198,7 @@ and (max-width: 768px) {
   text-transform: uppercase;
 }
 
-#design {
+#design, #project-tapture {
   padding: 135px 0;
   display: block;
 }
@@ -261,7 +261,7 @@ and (max-width: 768px) {
   opacity: 0;
   background: rgba(176, 190, 197, .85);
   text-align: center;
-  color: #fff;
+  color: #050505;
   transition: all .3s ease-in-out;
 }
 
@@ -310,6 +310,58 @@ p + p {
   color: white;
 }
 
+/** Project-modals **/
+.project-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.project-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    overflow: scroll;
+    font-size: 1.1em;
+  
+}
+
+.project-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.project-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.project-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1.5px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #ED272F;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.project-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1.5px;
+    height: 75px;
+    background-color: #ED272F;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 
 /** Responsive media setting **/
 /* Large desktop */
