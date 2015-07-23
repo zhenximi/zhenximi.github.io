@@ -357,10 +357,12 @@ p + p {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
+    transition: ease-in-out all .33s;
 }
 
 .project-modal .close-modal:hover {
-    opacity: .3;
+    opacity: .5;
+    transform: rotate(90deg);
 }
 
 .project-modal .close-modal .lr {
@@ -383,6 +385,8 @@ p + p {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+
 
 /** Responsive media setting **/
 /* Large desktop */
