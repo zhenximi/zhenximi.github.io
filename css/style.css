@@ -176,10 +176,12 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 .headline {
   position: absolute;
+  width: 70%;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
 }
+
 
 .text-h {
   width: 100%;
