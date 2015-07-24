@@ -200,7 +200,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   font-size: 5vw;
-  text-align: center;
+  text-align: left;
   vertical-align: center;
   text-transform: uppercase;
 }
