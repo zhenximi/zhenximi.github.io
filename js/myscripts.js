@@ -23,16 +23,17 @@ window.onload=function(){
     if (h < 4 || h > 21){
       greeting = "good night!";
     }
-    else if (h > 4 && h < 12) {
+    else if (h > 4 && h <= 12) {
       greeting = "good morning!";
     }
-    else if (h > 12 && h < 18) {
+    else if (h > 12 && h <= 18) {
       greeting = "good afternoon!";
     }
-    else if (h > 18 && h < 21) {
+    else if (h > 18 && h <= 21) {
       greeting = "good evening!";
     }
     $('#greetings').append("<span>" + greeting + "</span>");
+    console.log(greeting);
 }
 
 //Fire CSS animations after page loaded
