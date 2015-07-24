@@ -17,6 +17,22 @@ window.onload=function(){
     setTimeout(function(){
         scrollTo(0,-1);
     },0);
+    var now = new Date(),
+    h = now.getHours(),
+    greeting;
+    if (h < 4 || h > 21){
+      greeting = "good night!";
+    }
+    else if (h > 4 && h < 12) {
+      greeting = "good morning!";
+    }
+    else if (h > 12 && h < 18) {
+      greeting = "good afternoon!";
+    }
+    else if (h > 18 && h < 21) {
+      greeting = "good evening!";
+    }
+    $('#greetings').append("<span>" + greeting + "</span>");
 }
 
 //Fire CSS animations after page loaded
