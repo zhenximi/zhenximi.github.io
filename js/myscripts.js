@@ -6,13 +6,11 @@
  * @version 1.0
  */
 
-console.log('Hi, there!\nThank you for visiting my portifolio site.\nPlease contact me via zhenxi.mi@gmail.com.')
 
 // Onload
 
 window.onload=function(){
     $('#frontpage').addClass("fadeIn");
-    $('#frontpage').css('opacity',1);
     // Reset last scroll position
     setTimeout(function(){
         scrollTo(0,-1);
@@ -33,7 +31,7 @@ window.onload=function(){
       greeting = "good evening!";
     }
     $('#greetings').append("<span>" + greeting + "</span>");
-    console.log(greeting);
+    console.log("Hi, " + greeting + " This is Zhenxi Mi.\nThank you for visiting my portifolio site.\nPlease contact me via zhenxi.mi@gmail.com.");
 }
 
 //Fire CSS animations after page loaded
@@ -136,4 +134,11 @@ $(function() {
     $('.fullscreen').css('height', wheight);
   });
 
+  
+});
+
+var myVideo = $('#tapture-video'); 
+$('#tapture-button').click(function(){
+    myVideo.get(0).play();
+    $('#tapture-button').addClass('hidden');
 });
