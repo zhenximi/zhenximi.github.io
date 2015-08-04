@@ -435,7 +435,9 @@ p + p {
     left: 65px;
 }
 
-
+.light-blue [
+    background-color: rgba(183, 215, 225, .75. )
+]
 /** Responsive media setting **/
 /* Large desktop */
 @media (min-width: 1200px) { ... }
