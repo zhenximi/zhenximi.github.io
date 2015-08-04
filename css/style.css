@@ -6,6 +6,7 @@ body{
   font-weight: 300;
   font-size: 2em;
   position: relative;
+  z-index: 10;
 }
 
 h1, h2, h3, h4, h5, h6, nav, p {
@@ -14,6 +15,9 @@ h1, h2, h3, h4, h5, h6, nav, p {
   margin: 0;
 }
 
+p {
+  font-size: 20px;
+}
 /* Selected text Color */
 
 ::-moz-selection {
@@ -30,12 +34,17 @@ h1, h2, h3, h4, h5, h6, nav, p {
     text-align: center;
 }
 
-b, strong {
-    font-weight: 800;
+b, strong, .keywords {
+    font-weight: 600;
 }
 
 .hidden {
   display: none !important;
+}
+
+.keywords {
+  color: #ED272F;
+  opacity: .8;
 }
 
 /**  Header Navigation **/
@@ -185,7 +194,6 @@ header .navbar-default .navbar-toggle .icon-bar {
   transform: translate(-50%, -50%);
 }
 
-
 .text-h {
   width: 100%;
   height: 40%;
@@ -210,7 +218,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 #frontpage p {
   display: block;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 2.5vw;
   vertical-align: center;
@@ -307,6 +315,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 .avatar {
   display: block;
+  border: solid white 3px;
   cursor: zoom-in;
   border-radius: 50%;
   width: 200px;
@@ -400,6 +409,8 @@ p + p {
   height: 580px;
   float: right;
   margin-left: 30px;
+  margin-bottom: -50px;
+  overflow: hidden;
 }
 
 .iphone4s .static-screen {
@@ -423,7 +434,7 @@ p + p {
   text-align: center;
   line-height: 95px;
   padding-left: 5px;
-  color: rgba(0, 197, 216, .75);
+  color: rgba(0, 197, 216, .5);
 }
 
 .iphone4s .static-screen .play-button {
@@ -438,17 +449,26 @@ p + p {
   background-color: rgba(183, 215, 225, .75);
 }
 
+.project-intro {
+  padding-bottom: 70px;
+}
 .project-intro h1 {
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
-  line-height: 200%;
+  line-height: 150%;
   font-weight: bold !important;
+  color: #3DD1E0;
 }
 
 .project-intro h3 {
-  font-size: 20px;
-  line-height: 120%;
+  font-size: 24px;
+  line-height: 150%;
   text-align: center;
+  color: #3DD1E0;
+}
+
+.project-intro p {
+  padding: 20px 0;
 }
 
 #description {
