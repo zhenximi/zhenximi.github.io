@@ -15,6 +15,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/animation.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/dark.css">
   <link href="plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" rel="stylesheet" />
   <script src="js/prefixfree.min.js"></script>
   <!--[if lt IE 9]>
@@ -47,7 +48,7 @@
       </div>
     </div><!-- welcome -->
     <div class="welcome-title animated-3 flipInX" id="next">
-      <div class="block-triangle"></div>
+      <a href="#design"><div class="block-triangle"></div></a>
     </div><!-- welcome -->
   </div><!-- front-page -->
     <nav class="navbar navbar-default" role="navigation" id="navbar">
@@ -83,7 +84,7 @@
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Tapture</h1>
-                Title Synopsis</span>
+               Interaction Design, Mobile App, UX/UI</span>
               </div>
             </div><!-- project-info -->
             <img class="img-responsive"src="images/tapture-mockup.png" alt="Project Tempture">
@@ -238,16 +239,27 @@
       <p>One half designer, one quarter prototyper, and one quarter artist, with 3 years of working experience as a project manager for innovative design projects. I’m a team player, thriving on collaborative and creative jobs, work well with cross-functional teams by effective communication and shared understanding. With the User-Centered Design skills I developed from getting my Master of Human-Computer Interaction + Design at UW, as well as my passions in technology, art, and people, I’m competent to design delightful user experience.</p>
     </div>
   </div><!-- contact -->
-  <div id="footer">
-    <div class="container">
-      <span class="footer">Copyright 2015 &copy; Zhenxi Mi</span>
-    </div>
-  </div>
+  <footer>
+    <div class="container-fluid">
+      <div class="align-left copyright">
+        Copyright 2015 &copy; Zhenxi Mi
+      </div> <!-- align-left copyright -->
+      <div class="align-right social-links">
+        <ul class="social-links">
+          <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin_light">Linkedin<span></span></a></li>
+          <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook_light">Facebook<span></span></a></li>
+          <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest_light">Pinterest<span></span></a></li>
+          <li><a href="https://github.com/zhenximi" class="github_light">Github<span></span></a></li>
+        </ul>
+      </div> <!-- align-right social-links -->
+    </div> <!-- container-fluid -->  
+  </footer>
+
 
   <!-- Projects-modals -->
   <!-- Tapture-project -->
   <div class="project-modal modal fade" id="tapture-project" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
+    <div class="modal-content" id="top">
       <div class="close-modal" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
@@ -257,15 +269,15 @@
       <div class="container">
         <div class="col-lg-8 project-intro row-padding">
           <h1 class="title">TAPTURE</h1>
-           <h3>Jotting down ideas quickly, when we don’t have that piece of paper</h3>
-           <p>With Tapture we are focusing on the experience of taking notes with mobile devices, which would be a substitute of analog note taking measure such as a pen and piece of paper. We learned that many people prefer using pens and paper than using the apps on their phones because <span class="keywords">pens and paper</span> is <span class="keywords">quick</span> and <span class="keywords">easy</span>. And our secondary research and competitive analysis also show that the <span class="keywords">existing note-taking apps</span> in the market are <span class="keywords">complicated</span> and <span class="keywords">less intuitive</span> to use, and these are the main factors which stop the users from using it as the primary tool.</p>
+           <h4>Jotting down ideas quickly, when we don’t have that piece of paper</h4>
+           <p>With Tapture we are focusing on the experience of taking notes with mobile devices, which would be a substitute of analog note taking measure such as a pen and a piece of paper. We learned that many people prefer using pens and paper than using the apps on their phones because <span class="keywords">pens and paper</span> is <span class="keywords">quick</span> and <span class="keywords">easy</span>. And our secondary research and competitive analysis also show that the <span class="keywords">existing note-taking apps</span> in the market are <span class="keywords">complicated</span> and <span class="keywords">less intuitive</span> to use, and these are the main factors which stop the users from using it as the primary tool.</p>
            <p>This project was selected as one of the 6 <span class="keywords">finalists</span> for the <span class="keywords">2015 Shobe Startup Prize competition</span> from HCDE Department at University of Washington.</p>
         </div><!-- project-info -->
         <div class="col-lg-3 iphone4s video-view playing">
           <div class="static-screen">
             <video id="tapture-video" width="auto" height="350"  loop>
               <source src="images/tapture_iphone_4s.mp4" type="video/mp4">
-              Opps... Your browser does not support the video tag.
+              Oops... Your browser does not support the video tag.
             </video>
             <div class="play-button">
               <i id="tapture-button" class="glyphicon glyphicon-play-circle"></i>
@@ -275,7 +287,7 @@
       </div><!-- container -->
       <div class="container-fluid light-blue">
         <div class="container row-padding">
-          <div class="container col-lg-6 col-md-6 col-sm-12 new-padding">
+          <div class="container col-lg-5 col-md-5 col-sm-12" id="team-member">
             <div class="col-lg-6 col_md-6 col-sm-6 text-align-bottom">
               <p><b>Team:</b></p>
               <ul class="no-dots">
@@ -285,7 +297,7 @@
                 <li>Zhenxi Mi</li>
               </ul>            
             </div> <!-- col-lg-6 -->
-            <div class="col-lg-6 col_md-6 col-sm-6 text-align-bottom">
+            <div class="col-lg-6 col-md-6 col-sm-6 text-align-bottom">
               <p><b>Year:</b></p>
               <ul class="no-dots">
                 <li>2014</li>
@@ -298,14 +310,44 @@
               </ul> 
             </div> <!-- col-lg-6 -->
           </div> <!-- container col-lg-5--> 
-          <div class="container col-lg-6 col-md-6 col-sm-12">
+          <div class="container col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12">
             <img class="img-responsive" src="/images/tapture_discussion.jpg" alt="photo of ideation">
           </div>
         </div> <!-- container -->
+      </div> <!-- container-fluid light-blue -->
+      <div class="container row-padding">
+        <div class="container col-lg-6 col-md-6 col-sm-12 img-valign">
+            <img class="img-responsive" src="/images/tapture_competitive_analysis.jpg" alt="competitive analysis">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="left-border">
+            <h2><b>Research</b></h2>
+          </div>
+          <p>To investigate our design topic, we first conducted a few interviews with our potential users who take digital notes frequently with their mobile devices, in order to gain more insights of the existing note taking products.</p>
+          <p>We learned that typing on the screen is difficult, people write short notes in one line and tend to make a bulletin list; voice memo is difficult for review and not searchable; steps to initiate the note taking app may take away the original intentions.</p>
+        </div> <!-- col-lg-6 col-md-6 col-sm-6 -->
+      </div> <!-- container -->
+      <div class="row">
+        <a href="#top"><span class="glyphicon glyphicon-circle-arrow-up align-right bounceUp"></span></a>
       </div>
-      
-    </div>
-  </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="align-left copyright">
+            Copyright 2015 &copy; Zhenxi Mi
+          </div> <!-- align-left copyright -->
+          <div class="align-right social-links">
+            <ul class="social-links">
+              <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
+              <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
+              <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span></span></a></li>
+              <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
+              <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
+            </ul>
+          </div> <!-- align-right social-links -->
+        </div> <!-- container-fluid -->  
+      </footer>
+    </div><!-- modal-content -->
+  </div> <!-- project-modal modal fade -->
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -2,17 +2,16 @@
 
 /**  Basic Page CSS **/
 body{
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 300;
-  font-size: 2em;
-  position: relative;
-  z-index: 10;
-}
-
-h1, h2, h3, h4, h5, h6, nav, p {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   margin: 0;
+  font-size: 2em;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, nav{
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 300;
 }
 
 p {
@@ -30,12 +29,18 @@ p {
     color: #ED272F;
 }
 
-.centered {
-    text-align: center;
-}
 
 b, strong, .keywords {
     font-weight: 600;
+}
+
+
+.glyphicon-circle-arrow-up {
+  padding: 40px;
+  color: #060606;
+  font-size: 50px;
+  opacity: .5;
+
 }
 
 .hidden {
@@ -90,12 +95,12 @@ nav {
 
 nav li {
   list-style: none;
-    text-align: center;
-    display: inline;
-    padding: 0;
-    margin: 0 auto;
-    font-size: .8em;
-    font-weight: 300;
+  text-align: center;
+  display: inline;
+  padding: 0;
+  margin: 0 auto;
+  font-size: .8em;
+  font-weight: 300;
 }
 
 nav>li>a {
@@ -173,10 +178,24 @@ header .navbar-default .navbar-nav .active a:hover {
 */
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #279182;
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: white;
+  background-color: white;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar , .navbar-default .navbar-toggle:hover .icon-bar {
+  margin-top: 2px;
+  transition: ease-in-out all .33s;
+}  
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
   background-color: white;
 }
 
@@ -208,9 +227,8 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 #frontpage h1 {
   display: block;
-  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 3em;
   text-align: left;
   vertical-align: center;
   text-transform: uppercase;
@@ -218,9 +236,8 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 #frontpage p {
   display: block;
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 2.5vw;
+  font-size: 2em;
   vertical-align: center;
 }
 
@@ -236,7 +253,9 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 .showcase {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .project-cover {
@@ -292,7 +311,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 .project-info:hover {
-  opacity: .95;
+  opacity: .9;
 }
 
 .text-wrap {
@@ -306,11 +325,13 @@ header .navbar-default .navbar-toggle .icon-bar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5em;
+  font-size: .8em;
 }
 
 .project-info h1 {
-  font-size: 2em;
+  font-weight: 500;
+  font-size: 2.5em;
+  text-transform: uppercase;
 }
 
 .avatar {
@@ -337,12 +358,34 @@ p + p {
   color: white;
 }
 
-#footer {
+footer {
   border-top: none;
   border-bottom: none;
-  background-color:#3e3e3e;
-  color: #fff;  
-  padding:40px 0 40px 0;
+  background-color: #2e2e38;
+  color: #000;  
+  padding:40px;
+}
+
+.align-left {
+  float: left!important;
+}
+
+.align-right {
+  float: right!important;
+}
+
+.social-links {
+    list-style: none;
+    margin: 8px 0 0 0;
+    padding: 0;
+    margin-right: -9px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 9px 0 9px;
+    border-radius: 3px;
+    box-shadow: 0 4px 0 transparent;
 }
 
 /** Project-modals **/
@@ -351,7 +394,7 @@ p + p {
 }*/
 
 .project-modal .modal-content {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   min-height: 100%;
   border: 0;
   border-radius: 0;
@@ -399,7 +442,6 @@ p + p {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
 
 .iphone4s {
   background-image: url("../images/iphone4.png");
@@ -453,7 +495,7 @@ p + p {
 .row-padding {
   padding: 50px 0;
 }
-.project-intro h1 {
+#tapture-project .project-intro h1 {
   font-size: 60px;
   text-align: center;
   line-height: 150%;
@@ -461,8 +503,7 @@ p + p {
   color: #3DD1E0;
 }
 
-.project-intro h3 {
-  font-size: 24px;
+#tapture-project .project-intro h4 {
   line-height: 150%;
   text-align: center;
   color: #3DD1E0;
@@ -482,8 +523,25 @@ p + p {
   padding: 0 0;
 }
 
-.new-padding {
+#team-member {
   padding: 80px 0 0 0;
+}
+
+.left-border {
+  border-left-color: #3DD1E0;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.left-border h2 {
+  line-height: 150%;
+}
+
+.img-valign {
+  margin-top: 20px;
+  vertical-align: middle;
 }
 
 /** Responsive media setting **/
