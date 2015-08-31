@@ -330,7 +330,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 .project-info h1 {
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 3em;
   text-transform: uppercase;
 }
 
@@ -374,6 +374,12 @@ footer {
   float: right!important;
 }
 
+.copyright {
+  font-size: .8em;
+  font-weight: 100;
+  color: white;
+  line-height: 60px;
+}
 .social-links {
     list-style: none;
     margin: 8px 0 0 0;
