@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6, nav{
   font-weight: 300;
 }
 
-p {
+p, li {
   font-size: 20px;
 }
 /* Selected text Color */
@@ -408,7 +408,6 @@ footer {
   -webkit-box-shadow: none;
   box-shadow: none;
   overflow: scroll;
-  font-size: 1.1em;  
 }
 
 .project-modal .close-modal {
@@ -545,9 +544,8 @@ footer {
   line-height: 150%;
 }
 
-.img-valign {
-  margin-top: 20px;
-  vertical-align: middle;
+#tapture-project .img-valign {
+  margin-top: 65px;
 }
 
 /** Responsive media setting **/
