@@ -36,7 +36,7 @@
 
 <body class="preload">
   <header>
-  <div class="container-fluid cover fullheight" id="frontpage">
+  <div class="container-fluid cover fullheight fadeIn" id="frontpage">
     <div class="welcome-title animated-1 bounceInDown text-h">
       <div class="headline">
         <h1 id="greetings">Hi, </h1>
@@ -268,7 +268,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="col-lg-8 project-intro row-padding">
+        <div class="col-lg-6 project-intro row-padding">
           <h1 class="title">TAPTURE</h1>
            <h4>Jotting down ideas quickly, when we don’t have that piece of paper</h4>
            <p>With Tapture we are focusing on the experience of taking notes with mobile devices, which would be a substitute of analog note taking measure such as a pen and a piece of paper.</p>
@@ -276,15 +276,26 @@
         </div><!-- project-intro -->
         <div class="col-lg-3 iphone4s video-view playing">
           <div class="static-screen">
-            <video id="tapture-video" width="auto" height="350"  loop>
+            <video id="tapture-video-iphone" width="auto" height="350"  loop>
               <source src="images/tapture_iphone_4s.mp4" type="video/mp4">
               Oops... Your browser does not support the video tag.
             </video>
             <div class="play-button">
-              <i id="tapture-button" class="glyphicon glyphicon-play-circle"></i>
+              <i id="tapture-button-iphone" class="glyphicon glyphicon-play-circle"></i>
             </div><!-- play-button -->
           </div><!-- static-screen -->
         </div><!-- iphone4s video-view playing -->
+        <div class="col-lg-3 apple-watch video-view playing">
+          <div class="static-screen">
+            <video id="tapture-video-watch" width="auto" height="125"  loop>
+              <source src="images/tapture_apple_watch.mp4" type="video/mp4">
+              Oops... Your browser does not support the video tag.
+            </video>
+            <div class="play-button">
+              <i id="tapture-button-watch" class="glyphicon glyphicon-play-circle"></i>
+            </div><!-- play-button -->
+          </div><!-- static-screen -->
+        </div><!-- apple-watch video-view playing -->
       </div><!-- container -->
       <div class="container-fluid light-blue">
         <div class="container row-padding">

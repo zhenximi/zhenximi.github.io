@@ -1,38 +1,37 @@
 /*!
  * Myscripts.js for portifolio
- * Copyright (c) 2015 Zhenxi MI - zhenxi.mi<a>gmail<d>com | http://zhenximi.me
+ * Copyright (c) 2015 Zhenxi MI - zhenxi.mi<at>gmail<d>com | http://zhenximi.me
  * https://github.com/zhenximi/zhenximi.github.io/tree/master/js
  * @author Zhenxi Mi
  * @version 1.0
  */
 
-
 // Onload
-
 window.onload=function(){
-    $('#frontpage').addClass("fadeIn");
-    // Reset last scroll position
-    setTimeout(function(){
-        scrollTo(0,-1);
-    },0);
-    var now = new Date(),
-    h = now.getHours(),
-    greeting;
-    if (h < 4 || h > 21){
-      greeting = "good night!";
-    }
-    else if (h >= 4 && h <= 12) {
-      greeting = "good morning!";
-    }
-    else if (h > 12 && h <= 18) {
-      greeting = "good afternoon!";
-    }
-    else if (h > 18 && h <= 21) {
-      greeting = "good evening!";
-    }
-    $('#greetings').append("<span>" + greeting + "</span>");
-    console.log("Hi, " + greeting + " This is Zhenxi Mi.\nThank you for visiting my portifolio site.\nPlease contact me via zhenxi.mi@gmail.com.");
-}
+  // Reset last scroll position
+  setTimeout(function(){
+      scrollTo(0,-1);
+  },0);
+
+  //Detect client's local time
+  var now = new Date(),
+  h = now.getHours(),
+  greeting;
+  if (h < 4 || h > 21){
+    greeting = "good night!";
+  }
+  else if (h >= 4 && h <= 12) {
+    greeting = "good morning!";
+  }
+  else if (h > 12 && h <= 18) {
+    greeting = "good afternoon!";
+  }
+  else if (h > 18 && h <= 21) {
+    greeting = "good evening!";
+  }
+  $('#greetings').append("<span>" + greeting + "</span>");
+  console.log("Hi, " + greeting + " This is Zhenxi Mi.\nThank you for visiting my portifolio site.\nPlease contact me via zhenxi.mi@gmail.com.");
+};
 
 //Fire CSS animations after page loaded
 $(window).load(function() {
@@ -57,9 +56,6 @@ $(function() {
   var runonce = false;
   var heightLimit = $(window).height() - 110;
   $(window).bind('scroll', function () {
-    console.log($(window).scrollTop());
-    console.log($(window).height());
-    console.log('h',heightLimit);
     $(document).ready(function() {
       if ($(window).scrollTop() > 100 && $(window).scrollTop() < heightLimit && runonce == false) {
         var target = $('#design')
@@ -67,7 +63,6 @@ $(function() {
               scrollTop: target.offset().top
             }, 500);
         runonce = true;
-        console.log('here');
       }
     });
   });
@@ -137,8 +132,14 @@ $(function() {
   
 });
 
-var myVideo = $('#tapture-video'); 
-$('#tapture-button').click(function(){
-    myVideo.get(0).play();
-    $('#tapture-button').addClass('hidden');
+var myVideo1 = $('#tapture-video-iphone'); 
+$('#tapture-button-iphone').click(function(){
+    myVideo1.get(0).play();
+    $('#tapture-button-iphone').addClass('hidden');
+});
+
+var myVideo2 = $('#tapture-video-watch'); 
+$('#tapture-button-watch').click(function(){
+    myVideo2.get(0).play();
+    $('#tapture-button-watch').addClass('hidden');
 });
