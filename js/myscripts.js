@@ -133,13 +133,13 @@ $(function() {
 });
 
 var myVideo1 = $('#tapture-video-iphone'); 
-$('#tapture-button-iphone').click(function(){
+$('#tapture-button-iphone').hover(function(){
     myVideo1.get(0).play();
     $('#tapture-button-iphone').addClass('hidden');
 });
 
 var myVideo2 = $('#tapture-video-watch'); 
-$('#tapture-button-watch').click(function(){
+$('#tapture-button-watch').hover(function(){
     myVideo2.get(0).play();
     $('#tapture-button-watch').addClass('hidden');
 });
