@@ -454,13 +454,13 @@ footer {
   background-repeat: no-repeat;
   width: 310px;
   height: 580px;
-  margin-left: 30px;
+  margin-left: 100px;
   margin-bottom: -50px;
   overflow: hidden;
 }
 
 .iphone4s > .static-screen {
-  width: 250px;
+  width: 265px;
   height: 372px;
   margin: auto;
   margin-top: 95px;
