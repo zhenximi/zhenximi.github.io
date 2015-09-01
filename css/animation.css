@@ -293,6 +293,9 @@
   -webkit-animation-duration:1.5s;
   -moz-animation-duration:1.5s;
   animation-duration:1.5s;
+
+  -webkit-animation-delay: 2s; /* Chrome, Safari, Opera */
+  animation-delay: 2s;
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
