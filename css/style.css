@@ -459,7 +459,7 @@ footer {
   overflow: hidden;
 }
 
-.iphone4s .static-screen {
+.iphone4s > .static-screen {
   width: 250px;
   height: 372px;
   margin: auto;
@@ -467,12 +467,12 @@ footer {
   cursor: pointer;
   position: relative;
 }
-.iphone4s .static-screen #tapture-video{
+.iphone4s > .static-screen #tapture-video{
   margin-left: 9px;
   border: 2px solid grey;
 }
 
-.iphone4s .static-screen .play-button .glyphicon-play-circle{
+.iphone4s > .static-screen .play-button .glyphicon-play-circle{
   width: 100px;
   height: 100px;
   font-size: 120px;
@@ -483,7 +483,7 @@ footer {
   color: rgba(0, 197, 216, .5);
 }
 
-.iphone4s .static-screen .play-button {
+.iphone4s > .static-screen .play-button {
   padding-top: 120px;
   text-align: center;
   position: absolute;
@@ -502,7 +502,7 @@ footer {
   overflow: hidden;
 }
 
-.apple-watch .static-screen {
+.apple-watch > .static-screen {
   width: 250px;
   height: 372px;
   margin: auto;
@@ -510,12 +510,12 @@ footer {
   cursor: pointer;
   position: relative;
 }
-.apple-watch .static-screen #tapture-video{
+.apple-watch > .static-screen #tapture-video{
   margin-left: 4px;
   border: 1px solid grey;
 }
 
-.apple-watch .static-screen .play-button .glyphicon-play-circle{
+.apple-watch > .static-screen .play-button .glyphicon-play-circle{
   width: 100px;
   height: 100px;
   font-size: 88px;
@@ -526,7 +526,7 @@ footer {
   color: rgba(0, 197, 216, .3);
 }
 
-.apple-watch .static-screen .play-button {
+.apple-watch > .static-screen .play-button {
   padding-top: 15px;
   text-align: center;
   position: absolute;
