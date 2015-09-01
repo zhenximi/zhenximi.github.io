@@ -467,7 +467,7 @@ footer {
   cursor: pointer;
   position: relative;
 }
-.iphone4s > .static-screen #tapture-video{
+.iphone4s > .static-screen #tapture-video-iphone{
   margin-left: 9px;
   border: 2px solid grey;
 }
@@ -510,7 +510,7 @@ footer {
   cursor: pointer;
   position: relative;
 }
-.apple-watch > .static-screen #tapture-video{
+.apple-watch > .static-screen #tapture-video-watch{
   margin-left: 4px;
   border: 1px solid grey;
 }
