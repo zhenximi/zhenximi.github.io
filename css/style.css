@@ -603,7 +603,12 @@ footer {
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) {
+  .iphone4s {
+    margin-left: 200px;
+  }
+
+}
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -658,7 +663,7 @@ footer {
     margin-top: 150px;
     margin-bottom: 150px;
   }
-  
+
   p, li {
     font-size: 14px;
   }
