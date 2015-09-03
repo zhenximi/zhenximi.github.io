@@ -628,6 +628,10 @@ footer {
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  #frontpage h1, #frontpage p {
+    font-size: 1em;
+  }
+
   .avatar {
     display: block;
     border-radius: 50%;
@@ -643,6 +647,20 @@ footer {
 
   #about p {
     font-size: .62em;
+  }
+
+  .iphone4s {
+    margin-left: -8px;
+  }
+
+  .apple-watch {
+    margin-left: 70px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  
+  p, li {
+    font-size: 14px;
   }
 }
 
