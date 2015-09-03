@@ -418,13 +418,13 @@ footer {
   height: 75px;
   background-color: transparent;
   cursor: pointer;
-  transition: ease-in-out all .33s;
+/*  transition: ease-in-out all .33s;*/
   transform: scale(0.6,0.6);
 }
 
 .project-modal .close-modal:hover {
   opacity: .5;
-  transform: rotate(90deg);
+/*  transform: rotate(90deg);*/
 }
 
 .project-modal .close-modal .lr {
@@ -454,7 +454,7 @@ footer {
   background-repeat: no-repeat;
   width: 310px;
   height: 580px;
-  margin-left: 100px;
+  margin-left: 50px;
   margin-bottom: -50px;
   overflow: hidden;
 }
