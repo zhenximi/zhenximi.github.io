@@ -600,6 +600,12 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
   }
+#my-blurb {
+    padding: 30px 30px;
+  } 
+  .top-offset {
+    padding-top: 50px;
+  }
 }
  
 /* Portrait tablet to landscape and desktop */
