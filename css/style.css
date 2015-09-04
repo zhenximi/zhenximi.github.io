@@ -24,11 +24,18 @@ p, li {
     color: #ED272F;
 }
 
-::selection {
+::selection, a:hover {
     background: none;
     color: #ED272F;
 }
 
+a, a:visited {
+  color: inherit;
+}
+
+p a {
+  text-decoration: underline;
+}
 
 b, strong, .keywords {
     font-weight: 600;
@@ -354,8 +361,8 @@ p + p {
 }
 
 #about p {
-  font-size: 1.2em;
   color: white;
+  font-size: 1.2em;
 }
 
 footer {
@@ -539,6 +546,11 @@ footer {
   padding: 0 0;
 }
 
+.light-yellow {
+  background-color: rgba(255, 231, 110, .5);
+  padding: 0 0;
+}
+
 .row-padding {
   padding: 50px 0;
 }
@@ -561,8 +573,8 @@ footer {
   padding-top: 10px;
 }
 */
-#my-blurb {
-  padding: 30px 0;
+#my-blurb, #resume-link{
+  padding: 30px 30px;
 }
 
 .no-dots {
@@ -574,7 +586,7 @@ footer {
   padding: 80px 0 0 0;
 }
 
-.left-border {
+#tapture-project .left-border {
   border-left-color: #3DD1E0;
   border-left-style: solid;
   border-left-width: 5px;
@@ -582,12 +594,29 @@ footer {
   padding-left: 5px;
 }
 
-.left-border h2 {
+#tapture-project .left-border h2 {
   line-height: 150%;
 }
 
 #tapture-project .img-valign {
   margin-top: 65px;
+}
+
+#shift-project .poster-title {
+  width: 100%;
+  height: auto;
+}
+
+#shift-project .left-border {
+  border-left-color: #f5d32a;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+#shift-project .left-border h2 {
+  line-height: 150%;
 }
 
 /** Responsive media setting **/
@@ -600,18 +629,19 @@ footer {
     padding-top: 20px;
     padding-bottom: 10px;
   }
-#my-blurb {
-    padding: 30px 30px;
-  } 
-  .top-offset {
-    padding-top: 50px;
-  }
 }
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
   .iphone4s {
     margin-left: 200px;
+  }
+  .avatar {
+    border: solid white 3px;
+    width: 45%;
+    height: 45%;
+    margin: 0px auto;
+    box-shadow: 0 2px 3px -2px #232323;
   }
 
 }
@@ -635,6 +665,9 @@ footer {
   .navbar-default .navbar-brand {
     padding: 12px;
   }
+  .top-offset {
+    padding-top: 50px;
+  }
 }
  
 /* Landscape phones and down */
@@ -644,10 +677,9 @@ footer {
   }
 
   .avatar {
-    display: block;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    border: solid white 2px;
+    width: 30%;
+    height: 30%;
     margin: 0px auto;
     box-shadow: 0 2px 3px -2px #232323;
   }
