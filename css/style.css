@@ -253,9 +253,9 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 .showcase {
-  margin-bottom: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-bottom: 2px;
+  padding-right: 1px;
+  padding-left: 1px;
 }
 
 .project-cover {
@@ -336,11 +336,11 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 .avatar {
   display: block;
-  border: solid white 3px;
+  border: solid white 5px;
   cursor: zoom-in;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 75%;
+  height: 75%;
   margin: 20px auto;
   box-shadow: 0 3px 6px -3px #232323;
 }
@@ -562,7 +562,7 @@ footer {
 }
 */
 #my-blurb {
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .no-dots {
