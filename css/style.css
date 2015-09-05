@@ -282,31 +282,33 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 #wekart {
   background-color: rgba(212, 225, 87, 1);
+  display: none;
 }
 
 #karkee {
   background-color: rgba(255, 167, 38, 1);
+  display: none;
 }
 
 #blob {
   background-color: rgba(236, 64, 122, 1);
+  display: none;
 }
 
 #mhcid-web {
   background-color: rgba(126, 87, 194, 1);
-}
-
-#wekart {
-  background-color: rgba(38, 198, 218, 1);
+  display: none;
 }
 
 #canvas {
   background-color: rgba(255, 238, 88, 1);
+  display: none;
 }
 
-#twd {
-  background-color: rgba(189, 189, 189, 1);
+#resume, #contact {
+  display: none;
 }
+
 .project-info {
   position: absolute;
   width: 100%;
