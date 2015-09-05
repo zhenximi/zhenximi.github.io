@@ -250,7 +250,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 }
 
 #design, #project-tapture {
-  padding: 135px 0;
+  padding: 80px 0;
   display: block;
 }
 
@@ -680,11 +680,15 @@ footer {
 
   .avatar {
     border: solid white 2px;
-    width: 30%;
-    height: 30%;
+    width: 60px;
+    height: 60px;
     margin: 0px auto;
     box-shadow: 0 2px 3px -2px #232323;
   }
+  
+  #my-blurb, #resume-link{
+  padding: 10px 10px;
+}
 
   .top-offset {
     padding-top: 30px;
