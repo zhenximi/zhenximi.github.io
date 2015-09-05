@@ -67,7 +67,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#frontpage">HOME</a></li>
             <li><a href="#design">DESIGN</a></li>
-            <li><a href="#fine-arts">FINE ARTS</a></li>
+            <li class="disabled" ><a href="#fine-arts">FINE ARTS</a></li>
             <li><a href="#about">ABOUT ME</a></li>
             <li><a href="zhenxi_ux_designer_resume.pdf">RESUME</a></li>
             <li><a href="#contact">CONTACT</a></li>
@@ -189,7 +189,7 @@
   <div class="container-fluid fullscreen top-offset" id="about">
     <div class="container top-offset">
       <div class="container col-lg-4 col-md-4 col sm-12">
-        <img class="avatar" src="images/portrait.jpg" alt="Photo of Zhenxi">
+        <img class="avatar img-circle" src="images/portrait.jpg" alt="Photo of Zhenxi">
       </div>
       <div class="container col-lg-8 col-md-8 col-sm-12" id="my-blurb">
         <h1><strong>Hi, my name is Zhenxi (dgen-see)!</strong></h1>
@@ -229,10 +229,10 @@
 
   <footer>
     <div class="container-fluid">
-      <div class="align-left copyright">
+      <div class="pull-left copyright">
         Copyright 2015 &copy; Zhenxi Mi
-      </div> <!-- align-left copyright -->
-      <div class="align-right social-links">
+      </div> <!-- pull-left copyright -->
+      <div class="pull-right social-links">
         <ul class="social-links">
           <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
           <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
@@ -240,7 +240,7 @@
           <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
           <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
         </ul>
-      </div> <!-- align-right social-links -->
+      </div> <!-- pull-right social-links -->
     </div> <!-- container-fluid -->  
   </footer>
 
@@ -479,7 +479,7 @@
               <img class="img-responsive" src="/images/screen_5.png" alt="UI screen">
               <br>
               <p class="text-left"><small><i>Tap to play audio note</i></small></p>
-            </div><!--   col-lg-4 col-md-4 col-sm-6   -->
+            </div><!--   col-lg-4 col-md-4 col-sm-12   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
               <img class="img-responsive" src="/images/screen_6.png" alt="UI screen">
               <br>
@@ -509,14 +509,14 @@
 
 
       <div class="row">
-        <a href="#top"><span class="glyphicon glyphicon-circle-arrow-up align-right bounceUp"></span></a>
+        <a href="#top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
       </div>
       <footer>
         <div class="container-fluid">
-          <div class="align-left copyright">
+          <div class="pull-left copyright">
             Copyright 2015 &copy; Zhenxi Mi
-          </div> <!-- align-left copyright -->
-          <div class="align-right social-links">
+          </div> <!-- pull-left copyright -->
+          <div class="pull-right social-links">
             <ul class="social-links">
               <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
               <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
@@ -524,7 +524,7 @@
               <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
               <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
             </ul>
-          </div> <!-- align-right social-links -->
+          </div> <!-- pull-right social-links -->
         </div> <!-- container-fluid -->  
       </footer>
     </div><!-- modal-content -->
@@ -552,7 +552,7 @@
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-6 col-md-6 col-sm-12">
             <img class="img-responsive" src="images/aaa_teen_crash.gif" alt="AAA video of teen car crash">
-            <p class="text-center"><small><i><a href="https://www.youtube.com/watch?v=SDWmwxQ_NnY">Distractions and Teen Driver Crashes(AAA)</a></i></small></p>
+            <p class="text-center"><small><i><a href="https://www.youtube.com/watch?v=SDWmwxQ_NnY" target="_blank">Distractions and Teen Driver Crashes(AAA)</a></i></small></p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container row-padding -->
       </div> <!-- container-fluid light-yellow -->
@@ -579,7 +579,7 @@
       <div class="container-fluid light-yellow">
         <div class="container row-padding">
           <div class="container col-lg-6 col-md-6 col-sm-6 top-offset">
-            <img src="images/focus2.gif" alt="We focus on the sender side in the life of the text message" class="img-responsive">
+            <img src="images/focus2.gif" alt="We focus on the sender side in the life of the text message" class="img-responsive img-rounded">
             </img>
           </div> <!-- container col-lg-6 col-md-6 col-sm-6 -->
           <div class="container col-lg-6 col-md-6 col-sm-6">
@@ -587,13 +587,35 @@
                 <h2><strong>Opportunities</strong></h2>
             </div>
             <p>
-              A text from a person to a driver involves many different parts. The person uses their phone to send the text that is processed by a cell service, then to the phone of the driver who is in their car. In a competitive analysis, products all intervene in areas other than the original sender and their phone. These products, though numerous and varying, fail to make a large impact on the number of drivers that text on the road. Drivers feel annoyed and frustrated by the way products may intervene; and in fact, some products can even add more cognitive load to the driving experience than take load away.
+              A text from a sender to a driver involves many different parts. The person uses their phone to send the text that is processed by a cell service, then to the phone of the driver who is in their car. In a competitive analysis, products all intervene in areas other than the original sender and their phone. These products, though numerous and varying, fail to make a large impact on the number of drivers that text on the road. Drivers feel annoyed and frustrated by the way products may intervene; and in fact, some products can even add more cognitive load to the driving experience than take load away.
             </p>
+            <p>We found out a pattern that all the existing products or solutions are trying to put the every bit of the responsibility on the driver (recipient), so we took a step back to look at the whole life cycle of a text message, seeking for a different perspective to analyse the problem. We noticed that there was a blank field on the sender side. We asked ourselves, if putting all the responsibility on the driver to be safe isn’t working, then what will? Clearly texting involves two parties, not just one. So we started focusing on the original sender and their phone, where there has yet to be any attempted interventions.</p>
           </div> <!-- container col-lg-6 col-md-6 col-sm-6 -->
         </div> <!-- container row-padding -->
       </div> <!-- container-fluid light-yellow -->
-    </div><!-- modal-content -->
 
+
+
+      <div class="row">
+        <a href="#top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="pull-lfet copyright">
+            Copyright 2015 &copy; Zhenxi Mi
+          </div> <!-- pull-left copyright -->
+          <div class="pull-right social-links">
+            <ul class="social-links">
+              <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
+              <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
+              <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span></span></a></li>
+              <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
+              <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
+            </ul>
+          </div> <!-- pull-right social-links -->
+        </div> <!-- container-fluid -->  
+      </footer>
+    </div><!-- modal-content -->
   </div><!-- project-modal modal fade -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
