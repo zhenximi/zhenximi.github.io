@@ -687,7 +687,11 @@ footer {
   }
 
   .top-offset {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+
+  #my-blurb h1 {
+    font-size: 14px;
   }
 
   #about p {
