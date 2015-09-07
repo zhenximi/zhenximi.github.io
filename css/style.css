@@ -627,6 +627,7 @@ footer {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   padding-bottom: 3px;
+  margin-bottom: 20px;
 }
 
 #shift-project .left-border h2 {
