@@ -132,7 +132,7 @@ $(function() {
   
 });
 
-var myVideo1 = $('#tapture-video-iphone'); 
+var myVideo1 = $('#player_uid_195758569_1'); 
 $('#tapture-button-iphone').hover(function(){
     myVideo1.get(0).play();
     $('#tapture-button-iphone').addClass('hidden');
@@ -141,5 +141,6 @@ $('#tapture-button-iphone').hover(function(){
 var myVideo2 = $('#tapture-video-watch'); 
 $('#tapture-button-watch').hover(function(){
     myVideo2.get(0).play();
+    console.log("button is hovered")
     $('#tapture-button-watch').addClass('hidden');
 });
