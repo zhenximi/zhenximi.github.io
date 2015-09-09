@@ -266,6 +266,10 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-color: #E0E0E0;
 }
 
+.small-logo {
+  height: 25px;
+}
+
 #tapture {
   background-color: rgba(41, 182, 246, 1);
 }
@@ -647,13 +651,6 @@ footer {
   padding: 25px 0;
 }
 
-.video-container iframe {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 
 /** Responsive media setting **/
 /* Large desktop */
