@@ -707,6 +707,10 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .copyright {
+    font-size: 0.7em;
+  }
 }
  
 /* Landscape phones and down */
@@ -728,7 +732,7 @@ footer {
 }
 
   .top-offset {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 
   #my-blurb h1 {
