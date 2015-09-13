@@ -210,7 +210,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 
 .headline {
   position: absolute;
-  width: 70%;
+  width: 80%;
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
