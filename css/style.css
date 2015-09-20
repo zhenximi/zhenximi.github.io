@@ -212,7 +212,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   position: absolute;
   width: 80%;
   top: 50%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -232,7 +232,6 @@ header .navbar-default .navbar-toggle .icon-bar {
   display: block;
   font-weight: 700;
   font-size: 3em;
-  text-align: left;
   vertical-align: center;
   text-transform: uppercase;
 }
@@ -240,7 +239,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 #frontpage p {
   display: block;
   font-weight: 300;
-  font-size: 2em;
+  font-size: 1em;
   vertical-align: center;
 }
 
