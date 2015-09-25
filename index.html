@@ -27,7 +27,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/myscripts.js"></script>
   <script src="js/prefixfree.min.js"></script>
-  <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+  <script type="text/javascript">
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    //page is optimized for fast onload event
+    lazySizesConfig.loadMode = 1;
+  </script>
+  <script src="js/lazysizes.min.js"  async=""></script>
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -97,7 +102,7 @@
                Interaction Design, Research<br>Mobile App</span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/tapture-mockup.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/tapture-mockup.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -111,7 +116,7 @@
                 UX Design, Prototyping<br>iOS Feature<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/ustwo_logo.png" alt="ustwo"></span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/shift.png" alt="Project Shift">
+            <img class="img-responsive lazyload" data-src="images/shift.png" alt="Project Shift">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -125,7 +130,7 @@
                 UX Design, prototyping<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/new-microsoft-2013-logo-vector.png" alt="Microsoft"></span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/wekart.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/wekart.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -140,7 +145,7 @@
                 UX Design, Research<br>Service/Web<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/premera_logo_620x400.jpg" alt="Premera"></span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/simple_review.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/simple_review.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -154,7 +159,7 @@
                 Title Synopsis</span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/placeholder.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -168,7 +173,7 @@
                 Title Synopsis</span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/placeholder.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -182,7 +187,7 @@
                 Title Synopsis</span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive"src="images/placeholder.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
           </a>    
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -214,7 +219,7 @@
   </div><!-- about -->
   <div class="container" id="resume">
     <div class="row">
-      <img class="avatar" src="images/portrait.jpg" alt="Photo of Zhenxi">
+      <img class="avatar lazyload" data-src="images/portrait.jpg" alt="Photo of Zhenxi">
     </div><!-- row -->
   <div class="container col-lg-6 col-md-8 col-sm-10" id="description">
       <p>Tools that I love, Sketch 3, Arduino, HTML+CSS+JavaScript, Form/QC, Framer.js, Adobe Creative Cloud, Pen+Notebook</p>
@@ -223,7 +228,7 @@
   </div>
   <div class="container" id="contact">
     <div class="row">
-      <img class="avatar" src="images/portrait.jpg" alt="Photo of Zhenxi">
+      <img class="avatar lazyload" data-src="images/portrait.jpg" alt="Photo of Zhenxi">
     </div><!-- row -->
     <div class="container col-lg-6 col-md-8 col-sm-10" id="description">
       <p>Thank you for visiting my portfolio site, if you'd like to chat with me, let's grab a cup of coffee somewhere in New York, contact me via <a href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">zhenxi.mi[at]gmail.com</a></p>
@@ -273,7 +278,7 @@
         <div class="col-lg-3 col-md-6 col-sm-12 iphone4s video-view playing">
           <div class="static-screen">
             <div id="tapture-video-iphone">
-              <iframe width="256" height="392" src="https://www.youtube.com/embed/2WICWsjm6-c?rel=0&vq=large&version=3&loop=1&playlist=2WICWsjm6-c&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="256" height="392" class="lazyload" data-src="https://www.youtube.com/embed/2WICWsjm6-c?rel=0&vq=large&version=3&loop=1&playlist=2WICWsjm6-c&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="play-button hidden">
               <i id="tapture-button-iphone" class="glyphicon glyphicon-play-circle"></i>
@@ -282,7 +287,7 @@
         </div><!-- iphone4s video-view playing -->
         <div class="col-lg-3 col-md-6 col-sm-12 apple-watch video-view playing">
           <div class="static-screen">
-            <iframe width="100" height="125" src="https://www.youtube.com/embed/_SK5MSFzYYw?rel=0&vq=large&version=3&loop=1&playlist=_SK5MSFzYYw&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100" height="125" class="lazyload" data-src="https://www.youtube.com/embed/_SK5MSFzYYw?rel=0&vq=large&version=3&loop=1&playlist=_SK5MSFzYYw&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             <div class="play-button hidden">
               <i id="tapture-button-watch" class="glyphicon glyphicon-play-circle"></i>
             </div><!-- play-button -->
@@ -292,7 +297,7 @@
       <div class="container-fluid light-blue">
         <div class="container row-padding">
           <div class="container col-lg-6 col-md-12 col-sm-12 img-valign">
-              <img class="img-responsive" src="/images/tapture_competitive_analysis.jpg" alt="competitive analysis">
+              <img class="img-responsive lazyload" data-src="/images/tapture_competitive_analysis.jpg" alt="competitive analysis">
           </div>
           <div class="container col-lg-6 col-md-12 col-sm-12">
             <div class="left-border">
@@ -334,7 +339,7 @@
             </div> <!-- col-lg-6 -->
           </div> <!-- container col-lg-5--> 
           <div class="container col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12">
-            <img class="img-responsive img-rounded" src="/images/tapture_discussion.jpg" alt="photo of ideation">
+            <img class="img-responsive img-rounded lazyload" data-src="/images/tapture_discussion.jpg" alt="photo of ideation">
           </div> <!-- container col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12 -->
         </div> <!-- container -->
       </div> <!-- container-fluid -->
@@ -370,7 +375,7 @@
           </div> <!-- col-lg-5 col-md-5 col-sm-12 -->
           <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12">
             <br><br><br>
-           <img class="img-responsive" src="/images/tapture_steps.jpg" alt="graphic shows steps to take a note">
+           <img class="img-responsive lazyload" data-src="/images/tapture_steps.jpg" alt="graphic shows steps to take a note">
            <p class="text-center"><small><i>iOS Note app takes 6 steps to take a note</i></small></p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container -->
@@ -389,7 +394,7 @@
         <div class="container row-padding">
           <div class="col-lg-6 col-md-6 col-sm-12">
             <br><br><br>
-           <img class="img-responsive" src="/images/tapture_persona.jpg" alt="persona">
+           <img class="img-responsive lazyload" data-src="/images/tapture_persona.jpg" alt="persona">
            <p class="text-center"><small><i>User Persona</i></small></p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -407,10 +412,10 @@
             <div class="left-border">
               <h2><strong>UI Sketch</strong></h2>
             </div>
-            <img class="img-responsive" src="/images/tapture_sketch_2.jpg" alt="UI Sketch from scratch">
+            <img class="img-responsive lazyload" data-src="/images/tapture_sketch_2.jpg" alt="UI Sketch from scratch">
             <p class="text-center"><small><i>Evolution of the UI design</i></small></p>
             <br>
-            <img class="img-responsive" src="/images/tapture_sketch_1.jpg" alt="UI Sketch">
+            <img class="img-responsive lazyload" data-src="/images/tapture_sketch_1.jpg" alt="UI Sketch">
             <p class="text-center"><small><i>Refinement of the UI and interactions</i></small></p>
           </div> <!-- col-lg-12 col-md-12 col-sm-12 -->
         </div> <!-- container -->
@@ -434,10 +439,10 @@
       <div class="container-fluid">
         <div class="container row-padding">
           <div class="col-lg-6 col-md-6 col-sm-12">
-           <img class="img-responsive" src="/images/tapture_paper_prototype_1.jpg" alt="persona">
+           <img class="img-responsive lazyload" data-src="/images/tapture_paper_prototype_1.jpg" alt="persona">
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-6 col-md-6 col-sm-12">
-           <img class="img-responsive" src="/images/tapture_paper_prototype_2.jpg" alt="persona">
+           <img class="img-responsive lazyload" data-src="/images/tapture_paper_prototype_2.jpg" alt="persona">
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container -->
         <p class="text-center"><small><i>Paper Prototype</i></small></p>
@@ -451,7 +456,7 @@
             <p>After looking at the technologies, we learned that the best speech-to-text engine is Dragon Dictation from Nuance, it also powers Siri (iPhone personal assistance via voice commands). It’s the most accurate product that we can find on the existing market, and it provides free trial api for testing purpose. It claims 99% accuracy, however, the 1% may ruin the whole product if we didn't come up with an solution. As the result of our discussion, we decide to record the audio at a recognizable low quality as a back up. So if users want to verify the notes, the audio will take them back in time to review the context when they were taking the note.</p>           
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-4 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12">
-            <img class="img-responsive" src="/images/firstcreen.png" alt="UI screen">         
+            <img class="img-responsive lazyload" data-src="/images/firstcreen.png" alt="UI screen">         
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container -->
       </div><!--  container-fluid  -->
@@ -459,32 +464,32 @@
         <div class="container row-padding">
           <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_1.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_1.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>Press & Hold to start</i></small></p>
             </div> <!--  col-lg-4 col-md-4 col-sm-6   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_2.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_2.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>Slide left to cancel</i></small></p>
             </div><!--   col-lg-4 col-md-4 col-sm-6   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_3.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_3.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>Slide right to search</i></small></p>
             </div><!--   col-lg-4 col-md-4 col-sm-6   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_4.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_4.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>New card added</i></small></p>
             </div><!--   col-lg-4 col-md-4 col-sm-6   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_5.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_5.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>Tap to play audio note</i></small></p>
             </div><!--   col-lg-4 col-md-4 col-sm-12   -->
             <div class="col-lg-4 col-md-4 col-sm-6">
-              <img class="img-responsive center-block" src="/images/screen_6.png" alt="UI screen">
+              <img class="img-responsive center-block lazyload" data-src="/images/screen_6.png" alt="UI screen">
               <br>
               <p class="text-center"><small><i>Audio note playing</i></small></p>
             </div> <!--  col-lg-4 col-md-4 col-sm-6   -->
@@ -501,7 +506,7 @@
             
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img class="img-responsive img-rounded" src="/images/tapture_photo_form.jpg" alt="Prototyping with Form">
+            <img class="img-responsive img-rounded lazyload" data-src="/images/tapture_photo_form.jpg" alt="Prototyping with Form">
             <p class="text-center"><small><i>Interactive Prototyping with Form</i></small></p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container -->
@@ -543,20 +548,20 @@
         </div><!--   cross-icon   -->
       </div><!--   close-modal   -->
       <div class="row container-fluid">
-        <img class="poster-title" src="images/shift_poster.jpg" alt="shift project poster">
+        <img class="img-responsive lazyload" data-src="images/shift_poster.jpg" alt="shift project poster">
       </div><!-- container-fluid -->
       <div class="container">
           <h2 class="text-center"><strong class="bottom-border-yellow">Demo Video</strong></h2>
       </div>
       <div class="container center-block row-padding" id="vimeo-video">
-        <iframe src="https://player.vimeo.com/video/138473987?title=0&byline=0&portrait=0" width="678" height="382" align="middle" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="lazyload" data-src="https://player.vimeo.com/video/138473987?title=0&byline=0&portrait=0" width="678" height="382" align="middle" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       <div><h2 class="text-center"><strong class="bottom-border-yellow">Blog Post</strong></h2></div>
       <div class="container row-padding">
-        <a href="https://ustwo.com/blog/texting-and-driving-washington-uni"><img class="center-block" src="images/ustwo_blog.jpg" height="382" alt="Guest blog at ustwo"></a>
+        <a href="https://ustwo.com/blog/texting-and-driving-washington-uni"><img class="center-block lazyload" data-src="images/ustwo_blog.jpg" height="382" alt="Guest blog at ustwo"></a>
       </div>
       <div class="container row-padding">
-        <img src="images/drive_mode.jpg" alt="drive mode features, tell senders you are driving, defer notivications until done, sender can choose notify now." class="img-responsive center-block">
+        <img class="img-responsive center-block lazyload" data-src="images/drive_mode.jpg" alt="drive mode features, tell senders you are driving, defer notivications until done, sender can choose notify now." >
       </div>
       <div class="container-fluid light-yellow">
         <div class="container row-padding">
@@ -567,7 +572,7 @@
             <p>According to the research and statistics, in the US, there is average 1 teen death every day caused cell phone use while driving. Many states made <a href="http://www.ghsa.org/html/stateinfo/laws/cellphone_laws.html" target="_blank">specific laws to ban various cell phone uses</a>. And the main mobile phone carriers and big phone manufacturers have developed their own mobile applications to stop drivers from using their cell phones. Our secondary research showed that law didn’t work well, and the carriers’ applications caused many inconvenience to the users.</p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img class="img-responsive" src="images/aaa_teen_crash.gif" alt="AAA video of teen car crash">
+            <img class="img-responsive lazyload" data-src="images/aaa_teen_crash.gif" alt="AAA video of teen car crash">
             <p class="text-center"><small><i><a href="https://www.youtube.com/watch?v=SDWmwxQ_NnY" target="_blank">Distractions and Teen Driver Crashes(AAA)</a></i></small></p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container row-padding -->
@@ -575,7 +580,7 @@
       <div class="container-fluid">
         <div class="container row-padding">
           <div class="container col-lg-6 col-md-6 col-sm-6 top-offset">
-            <img src="images/focus2.gif" alt="We focus on the sender side in the life of the text message" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/focus2.gif" alt="We focus on the sender side in the life of the text message">
             </img>
             <p class="text-center"><small><i>Our Focus</i></small></p>
           </div> <!-- container col-lg-6 col-md-6 col-sm-6 -->
@@ -620,7 +625,7 @@
             </div> <!-- col-lg-8 col-md-8 col-sm-8 -->
           </div> <!-- container col-lg-5 col-md-5 col-sm-12 -->
           <div class="container col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-12">
-            <img src="images/shift_team.jpg" alt="picture of team Shift" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_team.jpg" alt="picture of team Shift">
             </img>
             <p class="text-center"><small><i>Part of Shift Team</i></small></p>
           </div> <!-- container col-lg-6 col-md-6 col-sm-12 -->
@@ -675,7 +680,7 @@
       <div class="container-fluid">
         <div class="container row-padding">
             <div class="container col-lg-6 col-md-6 col-sm-12">
-              <img src="images/sponsor.png" alt="design mentors from ustwo" class="img-responsive img-rounded">
+              <img class="img-responsive img-rounded lazyload" data-src="images/sponsor.png" alt="design mentors from ustwo">
             </div>
 
             <div class="container col-lg-6 col-md-6 col-sm-12">
@@ -693,7 +698,7 @@
         <div class="container row-padding">
           <div class="row">
             <div class="container col-lg-4 col-md-4 col-sm-12">
-              <img src="images/boyle.jpg" alt="picture of Dr. Linda Boyle" class="img-responsive center-block">
+              <img class="img-responsive center-block lazyload" data-src="images/boyle.jpg" alt="picture of Dr. Linda Boyle">
               <p class="text-center"><small><i>Dr. Linda Ng Boyle</i></small></p>
             </div> <!-- container col-lg-4 col-md-4 col-sm-12 top-offset -->
             <div class="container col-lg-8 col-md-8 col-sm-12">
@@ -715,7 +720,7 @@
               </p>
             </div> <!-- container col-lg-8 col-md-8 col-sm-12 -->
             <div class="container col-lg-4 col-md-4 col-sm-12">
-              <img src="images/simulator.jpg" alt="picture of Dr. Linda Boyle" class="img-responsive center-block">
+              <img class="img-responsive center-block lazyload" data-src="images/simulator.jpg" alt="picture of Dr. Linda Boyle">
               <p class="text-center"><small><i>Car Simulator</i></small></p>
             </div> <!-- container col-lg-6 col-md-6 col-sm-12 top-offset -->  
           </div>          
@@ -725,7 +730,7 @@
       <div class="container-fluid">
         <div class="container row-padding">
             <div class="container col-lg-6 col-md-6 col-sm-12">
-              <img src="images/shift_brainstorm.jpg" alt="" class="img-responsive img-rounded">
+              <img class="img-responsive img-rounded lazyload" data-src="images/shift_brainstorm.jpg" alt="team brainstorming session">
             </div>
             <div class="container col-lg-6 col-md-6 col-sm-12">
               <div class="left-border-yellow">
@@ -742,12 +747,12 @@
             <p>In order to search for possible solutions, we sketched out different scenarios that those modalities we brainstormed can be used. It was very helpful for us to think out of the box before we narrow down our focus.</p>
           </div>
           <div class="container col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_sketch.jpg" alt="" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_sketch.jpg" alt="Sketch">
           </div>                      
         </div> <!--  container row-padding  -->
         <div class="container row-padding">
           <div class="container col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_scope.jpg" alt="" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_scope.jpg" alt="Our scope focuses on the sender side">
           </div>
           <div class="container col-lg-6 col-md-6 col-sm-12">
             <div class="left-border-yellow">
@@ -761,7 +766,7 @@
           <h2><strong>Interaction Model</strong></h2>
           </div>
           <div class="container col-lg-12 col-md-12 col-sm-12">
-            <img src="images/shift_interaction.jpg" alt="interaction mode diagram" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_interaction.jpg" alt="interaction mode diagram">
           </div>
         </div> <!--  container row-padding  -->
       </div> <!-- container-fluid -->
@@ -776,13 +781,13 @@
             <br>
           </div>
           <div class="container col-lg-4 col-md-4 col-sm-12">
-            <img src="images/shift_prototype_1.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_prototype_1.jpg" alt="protoype">
           </div>
           <div class="container col-lg-4 col-md-4 col-sm-12">
-            <img src="images/shift_prototype_2.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_prototype_2.jpg" alt="protoype">
           </div>
           <div class="container col-lg-4 col-md-4 col-sm-12">
-            <img src="images/shift_prototype_3.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_prototype_3.jpg" alt="protoype">
           </div>
         </div> <!-- container row-padding -->
 
@@ -792,10 +797,10 @@
           </div>
           <br>
           <div class="container col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_prototype_4.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_prototype_4.jpg" alt="protoype">
           </div>
           <div class="container col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_prototype_5.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_prototype_5.jpg" alt="protoype">
           </div>
         </div> <!-- container row-padding -->
 
@@ -805,12 +810,12 @@
           </div>
           <br>
           <div class="container col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_paper_prototype_2.jpg" alt="protoype" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_paper_prototype_2.jpg" alt="protoype">
           </div>
           <div class="container col-lg-6 col-md-6 col-sm-12">
             
             <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/_5peDuSvdiY?rel=0&vq=large&version=3&loop=1&playlist=_5peDuSvdiY&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube.com/embed/_5peDuSvdiY?rel=0&vq=large&version=3&loop=1&playlist=_5peDuSvdiY&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             
           </div>
@@ -829,12 +834,12 @@
             </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_testing_1.jpg" alt="usability test" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_testing_1.jpg" alt="usability test">
             <p class="text-center"><small><i>Usability testing with paper prototype</i></small></p>
           </div>
           <div class="row"><br><br>&nbsp;</div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_research_demograph.jpg" alt="usability test demographics" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_research_demograph.jpg" alt="usability test demographics">
             <p class="text-center"><small><i>Usability testing demographics</i></small></p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
@@ -869,7 +874,7 @@
             </p>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12">
-            <img src="images/shift_testing_2.jpg" alt="usability test" class="img-responsive img-rounded">
+            <img class="img-responsive img-rounded lazyload" data-src="images/shift_testing_2.jpg" alt="usability test">
             <p class="text-center"><small><i>Usability testing in car simulator</i></small></p>
           </div>
 
