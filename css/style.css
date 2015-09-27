@@ -441,7 +441,6 @@ footer {
   background-clip: border-box;
   -webkit-box-shadow: none;
   box-shadow: none;
-  overflow: scroll;
 }
 
 .project-modal .close-modal {
@@ -677,6 +676,10 @@ footer {
   padding: 25px 0;
 }
 
+
+#wekart-top {
+  padding: 0;
+}
 
 /** Responsive media setting **/
 /* Large desktop */
