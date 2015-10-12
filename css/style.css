@@ -377,35 +377,39 @@ header .navbar-default .navbar-toggle .icon-bar {
   transform: translate(-50%, -50%);
 }
 
+
 .text-h {
+  top: 15%;
   width: 100%;
-  height: 40%;
+  height: 15%;
   position: relative;
 }
 
 #next {
   width: 100%;
-  height: 20%;
+  height: 65%;
   position: relative;
 }
 
 #frontpage h1 {
   display: block;
+  text-shadow: 5px 3px 5px #c6c6c6;
   font-weight: 700;
   font-size: 3em;
-  color: #ED272F;
+  color: #0a0a0a;
   text-transform: uppercase;
 }
 
 #frontpage p {
   display: block;
-  font-weight: 300;
+  text-shadow: 2px 1px 2px #c6c6c6;
+  font-weight: 400;
   font-size: 1em;
   color: #ED272F;
 }
 
 #design {
-  padding: 50px 0;
+  padding: 80px 0;
   display: block;
 }
 
@@ -940,6 +944,10 @@ footer {
     font-size: 20px;
   }
 
+  #design {
+    padding: 50px 0;
+    display: block;
+  }
 
   #seattle{
   left: -40%;
