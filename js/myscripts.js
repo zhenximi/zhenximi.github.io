@@ -72,14 +72,14 @@ $(function() {
 });
 
 
-// $(window).scroll(function(){
-//   var wScroll = $(this).scrollTop();
-//   if ($(window).scrollTop() < $(window).height()*0.7) {
-//   $('#frontpage').css({
-//     'transform' : 'translate(0px, '+ wScroll /6+'%)'
-//   });    
-//   }
-// });
+$(window).scroll(function(){
+  var wScroll = $(this).scrollTop();
+  if ($(window).scrollTop() < $(window).height()*0.7) {
+  $('#frontpage').css({
+    'transform' : 'translate(0px, -'+ wScroll /5+'%)'
+  });    
+  }
+});
 
 
 // Nav position
