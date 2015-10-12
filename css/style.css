@@ -933,7 +933,7 @@ footer {
 
 #frontpage p {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   h3 {
@@ -942,8 +942,8 @@ footer {
 
 
   #seattle{
-  left: 32%;
-  top: 110px;
+  left: -40%;
+  top: 0px;
   -webkit-transform: scale(0.35); /* Saf3.1+, Chrome */
    -moz-transform: scale(0.35); /* FF3.5+ */
     -ms-transform: scale(0.35); /* IE9 */
@@ -954,8 +954,8 @@ footer {
 }
 
   #san-jose {
-    left: -20%;
-    top: -20px;
+    left: -27%;
+    top: -150px;
     -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
      -moz-transform: scale(0.3); /* FF3.5+ */
       -ms-transform: scale(0.3); /* IE9 */
@@ -967,19 +967,19 @@ footer {
 
   #san-fransisco {
     left: 21%;
-    top: 100px;
-    -webkit-transform: scale(0.4); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.4); /* FF3.5+ */
-      -ms-transform: scale(0.4); /* IE9 */
-       -o-transform: scale(0.4); /* Opera 10.5+ */
-          transform: scale(0.4);
+    top: 70px;
+    -webkit-transform: scale(0.63); /* Saf3.1+, Chrome */
+     -moz-transform: scale(0.63); /* FF3.5+ */
+      -ms-transform: scale(0.63); /* IE9 */
+       -o-transform: scale(0.63); /* Opera 10.5+ */
+          transform: scale(0.63);
              /* IE6–IE9 */
              filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
   }
 
   #new-york {
-    left: -20%;
-    top: 70px;
+    left: 36%;
+    top: 25px;
     -webkit-transform: scale(0.45); /* Saf3.1+, Chrome */
      -moz-transform: scale(0.45); /* FF3.5+ */
       -ms-transform: scale(0.45); /* IE9 */
