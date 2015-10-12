@@ -51,7 +51,24 @@
 
 <body class="preload">
   <header>
-  <div class="container-fluid cover fullheight fadeIn" id="frontpage">
+    <div id="bg" class="fixed">
+      <div class="col-lg-12">
+        <ul id="scene">
+          <li class="layer" data-depth="0.20"><div id="seattle"><img class="sketch-figure" src="images/seattle.png"></div></li>
+          <li class="layer" data-depth="0.20"><div id="san-jose"><img class="sketch-figure" src="images/san_jose.png"></div></li>
+          <li class="layer" data-depth="0.20"><div id="san-fransisco"><img class="sketch-figure" src="images/san_fransisco.png"></div></li>
+          <li class="layer" data-depth="0.90"><div id="new-york"><img class="img-responsive" src="images/new_york.png"></div></li>
+        </ul>        
+      </div>
+    </div>
+    <script src="js/parallax.min.js"></script>
+    <script type="text/javascript">
+      //Parallax.js
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
+    </script>
+
+  <div class="fullheight fadeIn" id="frontpage">
     <div class="welcome-title animated-1 bounceInDown text-h">
       <div class="headline">
         <h1 class="text-center" id="greetings">Hi, </h1>
@@ -67,13 +84,14 @@
     </div><!-- welcome -->
   </div><!-- front-page -->
     <nav class="navbar navbar-default" role="navigation" id="navbar">
-      <div class="container-fluid" id="nav-toggle">
+      <div id="nav-toggle">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <div id="nav-icon4">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </button>
           <a href="#frontpage" class="navbar-brand" id="logo"></a>
         </div><!-- navbar-header -->
@@ -90,120 +108,122 @@
       </div><!-- container -->
     </nav>
   </header>
+  
+  <div class="full-size white-bg">
+    <div class="container" id="design">
+      <div class="row">
+        <div class="showcase col-lg-6 col-md-6 col-sm-12">
+          <div class="project-cover" id="tapture">
+            <a href="#tapture-project" class="project-link" data-toggle="modal" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Tapture</h1>
+                 Interaction Design, Research<br>Mobile App</span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/tapture-mockup.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-  <div class="container" id="design">
-    <div class="row">
-      <div class="showcase col-lg-6 col-md-6 col-sm-12">
-        <div class="project-cover" id="tapture">
-          <a href="#tapture-project" class="project-link" data-toggle="modal" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Tapture</h1>
-               Interaction Design, Research<br>Mobile App</span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/tapture-mockup.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+        <div class="showcase col-lg-6 col-md-6 col-sm-12">
+          <div class="project-cover" id="shift">
+            <a href="#shift-project" class="project-link" data-toggle="modal">
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Shift</h1>
+                  UX Design, Prototyping<br>iOS Feature<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/ustwo_logo.png" alt="ustwo"></span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/shift.png" alt="Project Shift">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-      <div class="showcase col-lg-6 col-md-6 col-sm-12">
-        <div class="project-cover" id="shift">
-          <a href="#shift-project" class="project-link" data-toggle="modal">
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Shift</h1>
-                UX Design, Prototyping<br>iOS Feature<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/ustwo_logo.png" alt="ustwo"></span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/shift.png" alt="Project Shift">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+        <div class="showcase col-lg-6 col-md-6 col-sm-12  ">
+          <div class="project-cover" id="wekart">
+            <a href="#wekart-project" class="project-link" data-toggle="modal" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Wekart</h1><br>
+                  UX Design, prototyping<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/new-microsoft-2013-logo-vector.png" alt="Microsoft"></span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/wekart.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-      <div class="showcase col-lg-6 col-md-6 col-sm-12  ">
-        <div class="project-cover" id="wekart">
-          <a href="wekart-project" class="project-link" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Wekart</h1>(Coming Soon)<br>
-                UX Design, prototyping<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/new-microsoft-2013-logo-vector.png" alt="Microsoft"></span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/wekart.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+      
+        <div class="showcase col-lg-6 col-md-6 col-sm-12">
+          <div class="project-cover" id="simple-review">
+            <a href="simple-review-project" class="project-link" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Simple Review</h1>(Coming Soon)<br>
+                  UX Design, Research<br>Service/Web<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/premera_logo_620x400.jpg" alt="Premera"></span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/simple_review.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-    
-      <div class="showcase col-lg-6 col-md-6 col-sm-12">
-        <div class="project-cover" id="simple-review">
-          <a href="simple-review-project" class="project-link" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Simple Review</h1>(Coming Soon)<br>
-                UX Design, Research<br>Service/Web<br><br><small><strong>Sponsor:  </strong></small><img class="small-logo" src="images/premera_logo_620x400.jpg" alt="Premera"></span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/simple_review.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+        <div class="showcase col-lg-4 col-md-4 col-sm-6">
+          <div class="project-cover" id="blob">
+            <a href="blob.html" class="project-link" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Tapture</h1>
+                  Title Synopsis</span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-      <div class="showcase col-lg-4 col-md-4 col-sm-6">
-        <div class="project-cover" id="blob">
-          <a href="blob.html" class="project-link" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Tapture</h1>
-                Title Synopsis</span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+        <div class="showcase col-lg-4 col-md-4 col-sm-6">
+          <div class="project-cover" id="mhcid-web">
+            <a href="mhcid-web.html" class="project-link" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Tapture</h1>
+                  Title Synopsis</span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-      <div class="showcase col-lg-4 col-md-4 col-sm-6">
-        <div class="project-cover" id="mhcid-web">
-          <a href="mhcid-web.html" class="project-link" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Tapture</h1>
-                Title Synopsis</span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+        <div class="showcase col-lg-4 col-md-4 col-sm-6">
+          <div class="project-cover" id="canvas">
+            <a href="canvas.html" class="project-link" >
+              <div class="project-info">
+                <div class="text-wrap">
+                  <span><h1>Tapture</h1>
+                  Title Synopsis</span>
+                </div>
+              </div><!-- project-info -->
+              <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
+            </a>    
+          </div><!-- project-cover -->
+        </div><!-- showcase -->
 
-      <div class="showcase col-lg-4 col-md-4 col-sm-6">
-        <div class="project-cover" id="canvas">
-          <a href="canvas.html" class="project-link" >
-            <div class="project-info">
-              <div class="text-wrap">
-                <span><h1>Tapture</h1>
-                Title Synopsis</span>
-              </div>
-            </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
-          </a>    
-        </div><!-- project-cover -->
-      </div><!-- showcase -->
+      </div><!-- row -->
 
-    </div><!-- row -->
+    </div><!-- design -->
+  </div><!--  white-bg  -->
 
 
-
-  </div><!-- design -->
   <div class="container" id="fine-art">
     
   </div><!-- fine-art -->
-  <div class="container-fluid fullscreen" id="about">
-    <div class="container vertical-center">
-      <div class="container col-lg-4 col-md-4 col sm-12">
-        <img class="avatar img-circle" src="images/portrait.jpg" alt="Photo of Zhenxi">
+  <div class="row vertical-center" id="about">
+    <div class="container">
+      <div class="container row col-lg-4 col-md-4 col sm-12">
+        <img class="avatar img-circle full-size" src="images/portrait.jpg" alt="Photo of Zhenxi">
       </div>
       <div class="container col-lg-8 col-md-8 col-sm-12" id="my-blurb">
         <h1><strong>Hi, my name is Zhenxi (dgen-see)!</strong></h1>
@@ -241,8 +261,8 @@
       </container>
   </div><!-- contact -->
 
-  <footer>
-    <div class="container-fluid">
+  <footer class="row">
+    <div class="container">
       <div class="col-lg-6 col-md-6 col-sm-12 pull-left copyright">
         Copyright 2015 &copy; Zhenxi Mi
       </div> <!-- pull-left copyright -->
@@ -553,12 +573,14 @@
       <div class="container">
           <h2 class="text-center"><strong class="bottom-border-yellow">Demo Video</strong></h2>
       </div>
-      <div class="container center-block row-padding" id="vimeo-video">
-        <iframe class="lazyload" data-src="https://player.vimeo.com/video/138473987?title=0&byline=0&portrait=0" width="678" height="382" align="middle" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div class="container center-block row-padding">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="lazyload center-block embed-responsive-item" data-src="https://www.youtube.com/embed/6n-WmaK3wtg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
       <div><h2 class="text-center"><strong class="bottom-border-yellow">Blog Post</strong></h2></div>
       <div class="container row-padding">
-        <a href="https://ustwo.com/blog/texting-and-driving-washington-uni" target="_blank"><img class="center-block lazyload" data-src="images/ustwo_blog.jpg" height="382" alt="Guest blog at ustwo"></a>
+        <a href="https://ustwo.com/blog/texting-and-driving-washington-uni" target="_blank"><img class="center-block lazyload img-responsive" data-src="images/ustwo_blog.jpg" alt="Guest blog at ustwo"></a>
       </div>
       <div class="container row-padding">
         <img class="img-responsive center-block lazyload" data-src="images/drive_mode.jpg" alt="drive mode features, tell senders you are driving, defer notivications until done, sender can choose notify now." >
@@ -647,7 +669,7 @@
               <h2><strong>Outcome</strong></h2>
             </div>
             <p>
-              We designed an OS level feature for mobile phones called “Drive Mode”, similar to the existing airplane mode, which should be turned on in designated scenarios. Drive Mode uses the concept of social signalling, and it provide the recipient contextual information to the sender. Our evaluation research proved that the sender wouldn’t text the recipient, if they were aware of the recipient was driving.
+              We designed an OS level feature for mobile phones called “Drive Mode”, similar to the existing airplane mode, which should be turned on in designated scenarios. Drive Mode uses the concept of social signaling, and it provide the recipient contextual information to the sender. Our evaluation research proved that the sender wouldn’t text the recipient, if they were aware of the recipient was driving.
             </p>
           </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
         </div> <!-- container row-padding -->
@@ -655,10 +677,10 @@
 
       <div class="container-fluid light-yellow">
         <div class="container row-padding">
-          <div class="left-border">
-            <h2><strong>Investigation</strong></h2>
-          </div>
           <div class="container col-lg-4 col-md-4 col-sm-12">
+            <div class="left-border">
+              <h2><strong>Investigation</strong></h2>
+            </div>
             <p>
               We did vast amount of secondary research, trying to understand the underlying human behaviours and the prevalent social norm of interpersonal communication in the digital age.
             </p>
@@ -696,7 +718,7 @@
       
       <div class="container-fluid light-yellow">
         <div class="container row-padding">
-          <div class="row">
+          <div >
             <div class="container col-lg-4 col-md-4 col-sm-12">
               <img class="img-responsive center-block lazyload" data-src="images/boyle.jpg" alt="picture of Dr. Linda Boyle">
               <p class="text-center"><small><i>Dr. Linda Ng Boyle</i></small></p>
@@ -710,7 +732,7 @@
               </p>
             </div> <!-- container col-lg-8 col-md-8 col-sm-12 -->  
           </div>
-          <div class="row">
+          <div>
             <div class="container col-lg-8 col-md-8 col-sm-12">
               <div class="left-border">
                 <h2><strong>Research Lab</strong></h2>
@@ -773,10 +795,10 @@
 
       <div class="container-fluid light-yellow" id="prototype">
         <div class="container row-padding">
-          <div class="left-border">
-            <h2><strong>Prototypes</strong></h2>
-          </div>
           <div class="container">
+            <div class="left-border">
+              <h2><strong>Prototypes</strong></h2>
+            </div>
             <h3 class="text-center"><strong class="bottom-border-white">Sender Side</strong></h3>
             <br>
           </div>
@@ -815,7 +837,9 @@
           <div class="container col-lg-6 col-md-6 col-sm-12">
             
             <div class="video-container">
-              <iframe width="560" height="315" class="lazyload" data-src="https://www.youtube.com/embed/_5peDuSvdiY?rel=0&vq=large&version=3&loop=1&playlist=_5peDuSvdiY&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="lazyload center-block embed-responsive-item" data-src="https://www.youtube.com/embed/_5peDuSvdiY?rel=0&vq=large&version=3&loop=1&playlist=_5peDuSvdiY&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
             
           </div>
@@ -902,6 +926,128 @@
       </footer>
     </div><!-- modal-content -->
   </div><!-- project-modal modal fade -->
+
+
+<!-- Wekart-project -->
+  <div class="project-modal modal fade" id="wekart-project" tabindex="-1" role="dialog" aria-hidden="true"> 
+    <div class="modal-content" id="wekart-top">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div><!--   cross-icon   -->
+      </div><!--   close-modal   -->
+      <div class="row container-fluid bottom-offset">
+        <img class="img-responsive lazyload" data-src="images/wekart_poster.jpg" alt="wekart project poster">
+      </div><!-- container-fluid -->
+      <div class="container">
+          <h2 class="text-center"><strong class="bottom-border-teal">Video Prototype</strong></h2>
+      </div>
+      <div class="container row-padding" id="wekart-video">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="lazyload center-block embed-responsive-item" data-src="https://www.youtube.com/embed/TkWYJF2YaIM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div> 
+      </div>
+      <div class="container-fluid light-teal">
+        <div class="container row-padding">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="left-border">
+              <h2><strong>Opportunities</strong></h2>
+            </div>
+            <p>We were challenged on Inclusive Design for a 10 weeks project through the course: Visual Storytelling, Microsoft Expo. Inspired by a video on YouTube called <a href="http://www.ghsa.org/html/stateinfo/laws/cellphone_laws.html" target="_blank"><i>How a Blind Person Grocery Shops</i></a>, my team had a very strong interest in improving the accessibility of grocery shopping. We learned from interviews that people would like to use the existing on-line services to assist their grocery shopping when they are temporarily less capable to do shopping by themselves. However, they also complained that the quality of the grocery was not guaranteed. In addition, we learned that some local communities offer help to the neighbours.</p>
+          </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="lazyload center-block embed-responsive-item" data-src="https://www.youtube.com/embed/b6M_WGGzGns?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div> 
+            <p class="text-center"><small><i><a href="https://www.youtube.com/watch?v=b6M_WGGzGns" target="_blank">How a Blind Person Grocery Shops</a></i></small></p>
+          </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
+        </div> <!-- container row-padding -->
+      </div> <!-- container-fluid light-yellow -->
+
+      <div class="container-fluid">
+        <div class="container row-padding">
+          <div class="container col-lg-6 col-md-6 col-sm-12">
+            <img class="img-responsive img-rounded lazyload" data-src="images/wekart_team.jpg" alt="picture of team Wekart">
+            </img>
+            <p class="text-center"><small><i>Shooting Video for Prototype</i></small></p>
+          </div> <!-- container col-lg-6 col-md-6 col-sm-12 -->
+          <div class="container col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-12">
+            <div class="left-border-teal">
+              <h2><strong>Team</strong></h2>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+              <p><strong>Member:</strong></p>
+              <ul class="list-unstyled">
+                <li><a href="http://garrickli.me/">Garrick L.</a></li>
+                <li><a href="http://jeschow.com/">Jessica C.</a></li>
+                <li><a href="http://melindakuei.com/">Melinda K.</a></li>
+                <li><a href="http://www.zhiyinrao.com/">Olivia R.</a></li>
+                <li><a href="http://www.zhuoxishang.com/">Summer S.</a></li>
+                <li>Zhenxi M.</li>
+              </ul>
+              <p><strong>Sponsor:</strong></p>
+              <p><img class="img-responsive" src="images/new-microsoft-2013-logo-vector.png" alt="sponsored by Microsoft"></p>
+            </div> <!--  col-lg-4 col-md-4 col-sm-4 -->
+            <div class="col-lg-8 col-md-8 col-sm-8">
+              <p><strong>Year:</strong></p>
+              <p>2015 (10 weeks)</p>
+              <p><strong>My Role:</strong></p>
+              <ul class="list-unstyled">
+                <li>UX & UI Design, Ideation</li>
+                <li>Research</li>
+                <li>Prototyping, Video Production</li>
+            </div> <!-- col-lg-8 col-md-8 col-sm-8 -->
+          </div> <!-- container col-lg-5 col-md-5 col-sm-12 -->          
+        </div> <!-- container row-padding -->
+      </div> <!-- container-fluid light-yellow -->
+      
+      <div class="container-fluid light-teal">
+        <div class="container row-padding">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="left-border">
+              <h2><strong>Challenge</strong></h2>
+            </div>
+            <p>
+              Design an inclusive grocery shopping experience by leverage the crowd-source from the local community in order to improve the accessibility to fresh groceries for permanent/temporarily disabled population.
+            </p>
+          </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="left-border">
+              <h2><strong>Outcome</strong></h2>
+            </div>
+            <p>
+              We handed in the final deliverable with a video prototype that demonstrated the user experience of our design as well as wire-frames and interactive prototypes. 
+            </p>
+          </div> <!-- col-lg-6 col-md-6 col-sm-12 -->
+        </div> <!-- container row-padding -->
+      </div> <!-- container-fluid -->
+
+      
+
+      <div class="row" id="go-top">
+        <a href="#wekart-top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
+      </div>
+      <footer>
+        <div class="container-fluid">
+          <div class="col-lg-6 col-md-6 col-sm-12 pull-left copyright">
+            Copyright 2015 &copy; Zhenxi Mi
+          </div> <!-- pull-left copyright -->
+          <div class="col-lg-6 col-md-6 col-sm-12 social-links">
+            <ul class="social-links pull-right">
+              <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
+              <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
+              <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span></span></a></li>
+              <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
+              <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
+            </ul>
+          </div> <!-- pull-right social-links -->
+        </div> <!-- container-fluid -->  
+      </footer>
+    </div><!-- modal-content -->
+  </div><!-- project-modal modal fade -->
+
+
 
 
 </body>

@@ -43,6 +43,9 @@ $(document).ready(function () {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
   });
+  $('#nav-icon4').click(function(){
+    $(this).toggleClass('open');
+  });
 });
 
 //Snapping section
@@ -57,17 +60,26 @@ $(function() {
   var heightLimit = $(window).height() - 110;
   $(window).bind('scroll', function () {
     $(document).ready(function() {
-      if ($(window).scrollTop() > 100 && $(window).scrollTop() < heightLimit && runonce == false) {
+      if ($(window).scrollTop() > 70 && $(window).scrollTop() < heightLimit && runonce == false) {
         var target = $('#design')
         $('html,body').animate({
               scrollTop: target.offset().top
-            }, 500);
+            }, 300);
         runonce = true;
       }
     });
   });
 });
 
+
+// $(window).scroll(function(){
+//   var wScroll = $(this).scrollTop();
+//   if ($(window).scrollTop() < $(window).height()*0.7) {
+//   $('#frontpage').css({
+//     'transform' : 'translate(0px, '+ wScroll /6+'%)'
+//   });    
+//   }
+// });
 
 
 // Nav position
@@ -98,7 +110,7 @@ $(function() {
           $('.navbar').css('background-color', 'transparent'); 
           $('#nav-toggle').css('border-bottom', '0px solid rgba(3, 3, 3, .85)'); 
         } else {
-          $('.navbar').css('background-color', 'rgba(255, 255, 255, 1)'); 
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, .9)'); 
           $('#nav-toggle').css('border-bottom', '1px solid rgba(3, 3, 3, .85)'); 
         }
   });
@@ -110,7 +122,7 @@ $(function() {
   "use strict";
 
   var menuOffset = 50; //variable for menu height
-  var wheight = $(window).height(); //get the height of the window
+  var wheight = $(window).innerHeight(); //get the height of the window
   if ($(window).width() > 768) {
     $('.fullheight').css('height', wheight - menuOffset); //set to window tallness 
     $('.fullscreen').css('height', wheight); 
@@ -124,23 +136,25 @@ $(function() {
 
   //adjust height of .fullheight elements on window resize
   $(window).resize(function() {
-    wheight = $(window).height(); //get the height of the window
-    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness
-    $('.fullscreen').css('height', wheight);
+    if ($(window).width() > 768) {
+      wheight = $(window).innerHeight(); //get the height of the window
+      $('.fullheight').css('height', wheight - menuOffset); //set to window tallness
+      $('.fullscreen').css('height', wheight);
+    }
   });
 
   
 });
 
-var myVideo1 = $('#player_uid_195758569_1'); 
-$('#tapture-button-iphone').hover(function(){
-    myVideo1.get(0).play();
-    $('#tapture-button-iphone').addClass('hidden');
-});
+// var myVideo1 = $('#player_uid_195758569_1'); 
+// $('#tapture-button-iphone').hover(function(){
+//     myVideo1.get(0).play();
+//     $('#tapture-button-iphone').addClass('hidden');
+// });
 
-var myVideo2 = $('#tapture-video-watch'); 
-$('#tapture-button-watch').hover(function(){
-    myVideo2.get(0).play();
-    console.log("button is hovered")
-    $('#tapture-button-watch').addClass('hidden');
-});
+// var myVideo2 = $('#tapture-video-watch'); 
+// $('#tapture-button-watch').hover(function(){
+//     myVideo2.get(0).play();
+//     console.log("button is hovered")
+//     $('#tapture-button-watch').addClass('hidden');
+// });
