@@ -927,10 +927,14 @@ footer {
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  #frontpage h1, #frontpage p {
+  #frontpage h1 {
     font-size: .9em;
   }
 
+#frontpage p {
+    font-size: 1em;
+    font-weight: 400;
+  }
 
   h3 {
     font-size: 20px;
