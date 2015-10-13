@@ -100,7 +100,7 @@
   background-size: contain;
 }
 
-.bounceUp:hover {
+.bounceUp {
   animation: bounceUp 2s 1 ease-in-out; 
   animation-iteration-count: 3; 
 

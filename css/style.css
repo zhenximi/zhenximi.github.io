@@ -438,7 +438,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(41, 182, 246, 1);
 }
 
-#tapture-project .glyphicon-circle-arrow-up:hover {
+#tapture-project .glyphicon-circle-arrow-up {
   color: rgb(41, 182, 246);
   opacity: .75;
 }
@@ -447,7 +447,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(244, 205, 0, 1);
 }
 
-#shift-project .glyphicon-circle-arrow-up:hover {
+#shift-project .glyphicon-circle-arrow-up {
   color: rgb(244, 205, 0);
   opacity: .75;
 }
@@ -456,7 +456,7 @@ header .navbar-default .navbar-toggle .icon-bar {
   background-color: rgba(77, 184, 178, 1);
 }
 
-#wekart-project .glyphicon-circle-arrow-up:hover {
+#wekart-project .glyphicon-circle-arrow-up {
   color: rgb(77, 184, 178);
   opacity: .75;
 }
@@ -855,13 +855,20 @@ footer {
   padding: 25px 0;
 }
 
-
 #wekart-top {
   padding: 0;
 }
 
 .bottom-offset {
   padding-bottom: 50px;
+}
+
+#tapture-go-top, #shift-go-top, #wekart-go-top {
+  position: fixed;
+  bottom: 10%;
+  left: 90%;
+  opacity: .9;
+  transition: opacity 10s ease-in-out;
 }
 
 
@@ -1058,7 +1065,7 @@ footer {
   
   #my-blurb, #resume-link{
   padding: 10px 10px;
-}
+  }
 
   .top-offset {
     padding-top: 10px;
@@ -1088,6 +1095,10 @@ footer {
 
   p, li {
     font-size: 14px;
+  }
+
+  #tapture-go-top, #shift-go-top, #wekart-go-top {
+  left: 70%;
   }
 }
 

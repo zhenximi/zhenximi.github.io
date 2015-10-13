@@ -99,6 +99,65 @@ $(window).bind('scroll', function () {
 });
 
 $(function() {
+  var mywindow1 = $("#tapture-project");
+  var mypos = mywindow1.scrollTop();
+  var up = false;
+  var newscroll;  
+  mywindow1.scroll(function () {
+    newscroll = mywindow1.scrollTop();
+      if (newscroll > mypos && !up) {
+          $('#tapture-go-top').addClass('hidden');
+          up = !up;
+      } else if(newscroll < mypos && up) {
+          $('#tapture-go-top').delay( 1000 ).removeClass('hidden');
+          $('#tapture-go-top').delay( 1000 ).addClass('bounceUp');
+          up = !up;
+      }
+      mypos = newscroll;
+  });
+});
+
+$(function() {
+  var mywindow2 = $("#shift-project");
+  var mypos = mywindow2.scrollTop();
+  var up = false;
+  var newscroll; 
+  mywindow2.scroll(function () {
+    newscroll = mywindow2.scrollTop();
+      if (newscroll > mypos && !up) {
+          $('#shift-go-top').addClass('hidden');
+          up = !up;
+      } else if(newscroll < mypos && up) {
+          $('#shift-go-top').delay( 1000 ).removeClass('hidden');
+          $('#shift-go-top').delay( 1000 ).addClass('bounceUp');
+          up = !up;
+      }
+      mypos = newscroll;
+  });
+
+});
+
+$(function() {
+  var mywindow3 = $("#wekart-project");
+  var mypos = mywindow3.scrollTop();
+  var up = false;
+  var newscroll;
+  mywindow3.scroll(function () {    
+    newscroll = mywindow3.scrollTop(); 
+      if (newscroll > mypos && !up) {
+          $('#wekart-go-top').addClass('hidden');
+          up = !up;
+      } else if(newscroll < mypos && up) {
+          $('#wekart-go-top').delay( 1000 ).removeClass('hidden');
+          $('#wekart-go-top').delay( 1000 ).addClass('bounceUp');
+          up = !up;
+      }
+      mypos = newscroll;
+  });
+
+});
+
+$(function() {
   "use strict";
   $('body').scrollspy({
     target: '#navbar', offset:15
