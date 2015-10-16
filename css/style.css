@@ -1050,6 +1050,10 @@ footer {
     font-size: 20px;
   }
 
+  h2 {
+    font-size: 15px;
+  }
+
   #design {
     padding: 50px 0;
     display: block;
