@@ -205,6 +205,21 @@ $(function() {
   
 });
 
+$(document).ready(function() {
+
+    $(".fancybox").fancybox({
+      openEffect  : 'elastic',
+      closeEffect : 'elastic',
+
+      helpers : {
+        title : {
+          type : 'inside'
+        }
+      }
+    });
+
+});
+
 // var myVideo1 = $('#player_uid_195758569_1'); 
 // $('#tapture-button-iphone').hover(function(){
 //     myVideo1.get(0).play();
