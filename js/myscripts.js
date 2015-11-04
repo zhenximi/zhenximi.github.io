@@ -157,6 +157,27 @@ $(function() {
 
 });
 
+
+$(function() {
+  var mywindow3 = $("#simple-review-project");
+  var mypos = mywindow3.scrollTop();
+  var up = false;
+  var newscroll;
+  mywindow3.scroll(function () {    
+    newscroll = mywindow3.scrollTop(); 
+      if (newscroll > mypos && !up) {
+          $('#simple-review-go-top').addClass('hidden');
+          up = !up;
+      } else if(newscroll < mypos && up) {
+          $('#simple-review-go-top').delay( 1000 ).removeClass('hidden');
+          $('#simple-review-go-top').delay( 1000 ).addClass('bounceUp');
+          up = !up;
+      }
+      mypos = newscroll;
+  });
+
+});
+
 $(function() {
   "use strict";
   $('body').scrollspy({
