@@ -71,6 +71,8 @@ $(function() {
   });
 });
 
+//fix modal can't scroll with arrow up and down
+$('.modal a:first-child').focus();
 
 $(window).scroll(function(){
   var wScroll = $(this).scrollTop();
