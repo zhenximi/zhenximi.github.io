@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd ~/zhenximi.github.io
+python -m SimpleHTTPServer 8080
+
