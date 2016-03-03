@@ -8,11 +8,14 @@
     <meta name="author" content="Zhenxi Mi">
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="https://sharepoint.mettel.net/SiteAssets/favicon.ico" type="image/x-icon" />
-    <title>Maintenance</title>
+    <title>Bruin is undergoing maintenance</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800" rel="stylesheet" type="text/css" />
 
     <link href="/Assets/css/mettel-metone.css?v=1.0.5905.19215" rel="stylesheet" type="text/css" />
     <style>
+        /* Global Font
+        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        
         html {
             font-size: 62.5%;
         }
@@ -100,7 +103,6 @@
         p {
             margin-top: 0;
         }
-        
         /* Links
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         
@@ -109,7 +111,6 @@
             text-decoration: none;
             color: white !important;
         }
-        
         /* Grid
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
         
@@ -118,13 +119,13 @@
             width: 100%;
             max-width: 960px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2%;
             box-sizing: border-box;
         }
         
         .column,
         .columns {
-            width: 100%;
+            width: 50%;
             float: left;
             box-sizing: border-box;
         }
@@ -135,6 +136,12 @@
                 width: 85%;
                 padding: 0;
             }
+            .column,
+            .columns {
+                float: none;
+                margin: 0 auto;
+                box-sizing: border-box;
+            }
         }
         /* For devices larger than 550px */
         
@@ -144,6 +151,7 @@
             }
             .column,
             .columns {
+                float: left;
                 margin-left: 4%;
             }
             .column:first-child,
@@ -255,7 +263,6 @@
                 margin-left: 52%;
             }
         }
-        
         /* Self Clearing Goodness */
         
         .container:after,
@@ -270,11 +277,16 @@
             max-width: 50%;
             padding: 0 0 2% 0;
         }
-/* Customization
+        /* Customization
         –––––––––––––––––––––––––––––––––––––––––––––––––– */
-        #logo {
+        
+        .logo {
             margin: 6% auto 1% auto;
-            height: 10%;
+        }
+        
+        .mettel-primary-button {
+            padding: 5px 30px;
+            font-size: 1.8rem;
         }
         
         .devider {
@@ -309,7 +321,7 @@
             display: inline-block;
             margin: 0 5px 0px 0;
             position: relative;
-            top: 2px;
+            top: 1px;
         }
         /* Mobile first queries */
         /* Smaller than iPhone6 */
@@ -321,33 +333,36 @@
             .container {
                 max-width: 70%;
             }
-            #logo {
+            .logo {
                 margin: 4% 15% 1% 15%;
             }
             .devider {
                 border: 0.5px solid #9B9B9B;
-                margin: 4% 1%;
+                margin: 4% 0;
             }
             .error-sign {
                 display: block;
-                padding: 4% 0;
+                padding: 0;
             }
             .error-sign .svg {
-                transform: scale(.7);
+                transform: scale(.4);
             }
-            /* Larger than mobile */
         }
+        /* Larger than mobile */
         
         @media (min-width: 400px) {
             html {
                 font-size: 6px;
             }
+            .logo {
+                margin: 4% 15% 1% 15%;
+            }
             .error-sign {
                 display: block;
-                padding: 4% 0;
+                padding: 1% 0;
             }
             .error-sign .svg {
-                transform: scale(.9);
+                transform: scale(.5);
             }
         }
         /* Larger than phablet */
@@ -356,12 +371,21 @@
             html {
                 font-size: 10px;
             }
+            .logo {
+                margin: 3% 12% 1% 12%;
+            }
+            .container {
+                max-width: 65%;
+            }
             .error-sign {
                 display: block;
                 padding: 10% 0;
             }
             .error-sign .svg {
-                transform: scale(0.4);
+                transform: scale(0.7);
+            }
+            .mettel-primary-button div {
+                top: 2px;
             }
         }
         /* Larger than tablet */
@@ -371,11 +395,10 @@
                 font-size: 11px;
             }
             .error-sign {
-                display: block;
                 padding: 10% 0;
             }
             .error-sign .svg {
-                transform: scale(1);
+                transform: scale(0.8);
             }
         }
         /* Larger than desktop */
@@ -385,11 +408,16 @@
                 font-size: 12px;
             }
             .error-sign {
+                width: 60%;
+                margin: 0 auto;
                 display: block;
-                padding: 10% 0;
+                padding: 12% 0;
             }
             .error-sign .svg {
-                transform: scale(1.2);
+                transform: scale(1);
+            }
+            .mettel-primary-button div {
+                top: 4px;
             }
         }
         /* Larger than Desktop HD */
@@ -404,14 +432,14 @@
 
 <body>
     <div class="container">
-        <div class="row" id="logo">
-            <div class="offset-by-four four columns">
+        <div class="row logo">
+            <a class="offset-by-four four columns" href="/Dashboard/">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 249 79" enable-background="new 0 0 249 79" xml:space="preserve">
                     <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M62.3 0L43.1 36.9H43L37.9 0H14.4L4.3 55.5h14.6l7.5-42.6h0.2l5.8 42.6H46L68 12.9h0.2l-8 42.6h14.6L84.9 0H62.3zM178.9 11l-8.2 44.5h-14.9l5.1-27.7 15.2-3.7h-14.5 -19.4l-1.6 8.6 -1.2 6.7c-0.9 5-0.2 7.6 3.8 7.6l3.9 8.7c-2.8 0.3-5.6 0.8-9.2 0.8 -12.9 0-15-5.6-13.2-15.5l3.1-16.9 -4.8 0c1 3.6 0.9 7.8 0.1 12.3l-0.5 2.6H93.9c-0.2 5.7 3.7 8 10.8 8 2.3 0 4.9-0.3 7.6-1l3.7 8c-4.9 1.8-10.3 2.6-15.6 2.6 -13.8 0-22.8-8-20.3-21.7 2.5-13.7 13.3-21.6 26.3-21.6 9.5 0 14.5 4.1 16.4 10.2l0.6-2.3L146 3.9l-1.9 10.2h19.4l0.6-3.1h-9.6l2-11h38.3l-2 11H178.9zM104.8 22.2c-5.2 0-8.4 3.9-9.6 8.7h16C112.1 26.1 110.6 22.2 104.8 22.2zM228.4 0l-10.2 55.5h14.4L242.8 0H228.4zM209.5 45.7l3.3 7.4 -0.1 0.8c-5 1.8-10.4 2.6-15.8 2.6 -13.8 0-22.8-8-20.3-21.7 2.5-13.7 13.3-21.6 26.3-21.6 15.4 0 19.1 10.9 16.8 23.2l-0.5 2.6h-28.8c-0.2 5.7 3.7 8 10.8 8C203.8 46.9 206.6 46.6 209.5 45.7zM191.8 30.9h16c0.9-4.8-0.7-8.7-6.4-8.7C196.2 22.2 193 26.1 191.8 30.9z" />
                     <polygon fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" points="0 79 179.1 61.5 3.2 61.5 " />
                     <path fill="#FFFFFF" d="M243.2 43.2c3.3 0 5.8 2.6 5.8 5.9 0 3.3-2.6 5.9-5.9 5.9 -3.3 0-5.9-2.6-5.9-5.9C237.2 45.8 239.9 43.2 243.2 43.2L243.2 43.2zM243.1 44.1c-2.6 0-4.8 2.2-4.8 5 0 2.8 2.1 5 4.8 5 2.6 0 4.8-2.2 4.8-5C247.9 46.4 245.8 44.1 243.1 44.1L243.1 44.1zM242 52.6H241V46c0.6-0.1 1.1-0.2 1.9-0.2 1 0 1.7 0.2 2.1 0.5 0.4 0.3 0.6 0.7 0.6 1.4 0 0.9-0.6 1.4-1.3 1.6v0.1c0.6 0.1 1 0.6 1.1 1.6 0.2 1 0.3 1.4 0.4 1.6h-1.1c-0.2-0.2-0.3-0.8-0.5-1.7 -0.2-0.8-0.6-1.2-1.4-1.2H242V52.6zM242 48.9h0.8c0.9 0 1.6-0.3 1.6-1.1 0-0.6-0.4-1.2-1.6-1.2 -0.3 0-0.6 0-0.8 0.1V48.9z" />
                 </svg>
-            </div>
+            </a>
         </div>
         <div class="row">
             <div class="devider"></div>
