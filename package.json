@@ -1,25 +1,26 @@
 {
-  "name": "zhenximi.github.io",
-  "version": "1.0.0",
-  "description": "This is Zhenxi's portfolio site",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhenximi/zhenximi.github.io.git"
-  },
-  "author": "Zhenxi Mi",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhenximi/zhenximi.github.io/issues"
-  },
-  "homepage": "https://github.com/zhenximi/zhenximi.github.io#readme",
-  "dependencies": {
-    "express": "^4.15.2"
-  }
+	"name": "zhenximi.github.io",
+	"version": "1.0.0",
+	"description": "This is Zhenxi's portfolio site",
+	"homepage": "https://github.com/zhenximi/zhenximi.github.io#readme",
+	"bugs": {
+		"url": "https://github.com/zhenximi/zhenximi.github.io/issues"
+	},
+	"license": "ISC",
+	"author": "Zhenxi Mi",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zhenximi/zhenximi.github.io.git"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"express": "^4.15.2"
+	}
 }
