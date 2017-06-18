@@ -456,6 +456,10 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2
   opacity: .75;
 }
 
+#shift-poster {
+  max-width: 90%;
+}
+
 #wekart {
   background-color: rgba(77, 184, 178, 1);
 }
