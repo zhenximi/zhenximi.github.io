@@ -73,6 +73,31 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
   <!-- End Google Tag Manager -->
   <div id="landing-page">
     <div id="bg" class="fixed">
+      <div id="city-background">
+      </div>
+      <div id="paper-plane">
+        <div class="animated-plane-wrapper" >
+          <div class="animated-plane" >
+            <div class="paper-plane" >
+              <div class="right-wing" ><svg viewBox="0 0 114 50" ><g ><polygon class="cls-1" points="1.25 1.25 110.13 1.25 1.25 36.25 1.25 1.25" ></polygon></g></svg></div>
+              <div class="left-wing" ><svg viewBox="0 0 114 50" ><g ><polygon class="cls-1" points="1.25 1.25 110.13 1.25 1.25 36.25 1.25 1.25" ></polygon></g></svg></div>
+              <div class="right-fuselage" ><svg viewBox="0 0 114 50" ><g ><polygon class="cls-1" points="1.25 1.25 110.13 1.25 1.25 36.25 1.25 1.25" ></polygon></g></svg></div>
+              <div class="left-fuselage" ><svg viewBox="0 0 114 50" ><g ><polygon class="cls-1" points="1.25 1.25 110.13 1.25 1.25 36.25 1.25 1.25" ></polygon></g></svg></div>
+              <div class="trail" ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        //plane rotation
+        var plane = $("#paper-plane");
+
+        $(document).on("mousemove",function(e) {
+          var ax = -($(window).innerWidth()/2- e.pageX)/20;
+          var ay = ($(window).innerHeight()/2- e.pageY)/20;
+          plane.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+        });
+      </script>
       <div>
         <ul id="scene">
           <li class="layer" data-depth="0.10"><div id="san-fransisco"><img class="img-responsive" src="images/san_fransisco.png"></div></li>
@@ -97,7 +122,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
     </div><!-- welcome -->
     <div class="welcome-title animated-2 fadeInLeft text-h">
       <div class="headline text-center">
-        <p>I'm Zhenxi Mi</p><p>I design great products, apps and services</p>
+        <p>I'm Zhenxi Mi</p><p>UX/UI Designer, Growing Front-end Dev</p>
       </div>
     </div><!-- welcome -->
     <div class="welcome-title animated-3 flipInX" id="next">

@@ -289,9 +289,8 @@ header .navbar-default .navbar-toggle .icon-bar {
   width: 100%;
   height: 100%;
   background:url(
-
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2NkYGCQZGBgeM6AH0gyElAAlx5ViDekQMFDVIADAOJ7Aj3QNHcUAAAAAElFTkSuQmCC
-    ) repeat;
+    ) repeat,  #edf2f4;;
 }
 
 .white-bg {
@@ -302,21 +301,42 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2
     position: relative;
 }
 
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+#city-background {
+  position: absolute;
+  bottom:50px;
+  left: 0%;
+  width: 200%;
+  height: 25%;
+  background: url(/images/skyline.png) repeat-x 0 0;
+  background-size: 100% 100%;
+  animation: move 20s infinite;
+  animation-timing-function: linear;
+}
+
 #seattle{
-  left: 320px;
-  top: 100px;
-  -webkit-transform: scale(0.55); /* Saf3.1+, Chrome */
-   -moz-transform: scale(0.55); /* FF3.5+ */
-    -ms-transform: scale(0.55); /* IE9 */
-     -o-transform: scale(0.55); /* Opera 10.5+ */
-        transform: scale(0.55);
+  left: 40%;
+  top: 200px;
+  -webkit-transform: scale(0.5); /* Saf3.1+, Chrome */
+   -moz-transform: scale(0.5); /* FF3.5+ */
+    -ms-transform: scale(0.5); /* IE9 */
+     -o-transform: scale(0.5); /* Opera 10.5+ */
+        transform: scale(0.5);
            /* IE6–IE9 */
            filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }
 
 #san-jose {
-  left: 600px;
-  top: 50px;
+  left: 70%;
+  top: 150px;
   -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
    -moz-transform: scale(0.3); /* FF3.5+ */
     -ms-transform: scale(0.3); /* IE9 */
@@ -327,8 +347,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2
 }
 
 #san-fransisco {
-  left: 200px;
-  top: 50px;
+  left: 30%;
+  top: 200px;
   -webkit-transform: scale(0.4); /* Saf3.1+, Chrome */
    -moz-transform: scale(0.4); /* FF3.5+ */
     -ms-transform: scale(0.4); /* IE9 */
@@ -339,13 +359,13 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAJElEQVQYV2
 }
 
 #new-york {
-  left: 300px;
-  top: 200px;
-  -webkit-transform: scale(0.6); /* Saf3.1+, Chrome */
-   -moz-transform: scale(0.6); /* FF3.5+ */
-    -ms-transform: scale(0.6); /* IE9 */
-     -o-transform: scale(0.6); /* Opera 10.5+ */
-        transform: scale(0.6);
+  left: 30%;
+  top: 150px;
+  -webkit-transform: scale(0.3); /* Saf3.1+, Chrome */
+   -moz-transform: scale(0.3); /* FF3.5+ */
+    -ms-transform: scale(0.3); /* IE9 */
+     -o-transform: scale(0.3); /* Opera 10.5+ */
+        transform: scale(0.3);
            /* IE6–IE9 */
            filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.9999619230641713, M12=-0.008726535498373935, M21=0.008726535498373935, M22=0.9999619230641713,SizingMethod='auto expand');
 }
@@ -1139,4 +1159,189 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/*animated plane*/
+
+#paper-plane {
+  position: absolute;
+  left: 45%;
+  bottom:45%;
+  z-index: 999;
+}
+.animated-plane-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  color: #f8f8f8;
+  transform-style: preserve-3d;
+  transform: translateZ(100px);
+}
+
+.animated-plane {
+  width: 220px;
+  height: 220px;
+  transform-style: preserve-3d;
+  perspective: 2000px;
+  transform: rotateY(6.8deg) rotateX(6.08deg);
+}
+
+.animated-plane .paper-plane {
+  position: absolute;
+  top: 47%;
+  left: 27%;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  -ms-transform-origin: 50% top;
+  transform-origin: 50% top;
+  transform: rotateX(-30deg) rotateY(-14deg);
+  overflow: visible;
+  animation: p 4s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes p {
+  0% {
+    transform: rotateX(-20deg) rotateY(-14deg);
+  }
+  25% {
+    transform: rotateX(-14deg) rotateY(-14deg);
+  }
+  50% {
+    transform: rotateX(-20deg) rotateY(-14deg);
+  }
+  75% {
+    transform: rotateX(-26deg) rotateY(-14deg);
+  }
+  to {
+    transform: rotateX(-20deg) rotateY(-14deg);
+  }
+}
+
+.animated-plane div[class*=wing] {
+  z-index: 2;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+.animated-plane .right-wing {
+  transform: rotateX(80deg) translateY(3px) rotate(-4deg) translateZ(-1px);
+}
+.animated-plane .left-fuselage,
+.animated-plane .left-wing,
+.animated-plane .right-fuselage,
+.animated-plane .right-wing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  width: 114px;
+  height: 50px;
+}
+
+.animated-plane div[class*=wing] svg {
+  fill: #e0e0e0;
+}
+
+.animated-plane div[class*=fuselage] svg {
+    fill: #aaa;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.animated-plane div[class*=wing] {
+  z-index: 2;
+  -ms-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+}
+
+.animated-plane .left-wing {
+  transform: rotateX(-80deg) translateY(3px) rotate(-4deg) translateZ(1px);
+}
+
+.animated-plane .left-fuselage,
+.animated-plane .left-wing,
+.animated-plane .right-fuselage,
+.animated-plane .right-wing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  width: 114px;
+  height: 50px;
+}
+
+.animated-plane div[class*=fuselage] {
+  z-index: 1;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.animated-plane .right-fuselage {
+  transform: rotateX(10deg) rotateY(-4deg) translateZ(0);
+}
+
+.animated-plane .left-fuselage,
+.animated-plane .left-wing,
+.animated-plane .right-fuselage,
+.animated-plane .right-wing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  width: 114px;
+  height: 50px;
+}
+
+.animated-plane div[class*=fuselage] {
+  z-index: 1;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.animated-plane .left-fuselage {
+  transform: rotateX(-10deg) rotateY(4deg) translateZ(0);
+}
+
+.animated-plane .left-fuselage,
+.animated-plane .left-wing,
+.animated-plane .right-fuselage,
+.animated-plane .right-wing {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: visible;
+  width: 114px;
+  height: 50px;
+}
+
+.animated-plane .trail {
+  position: absolute;
+  left: -104px;
+  top: 0;
+  z-index: 1;
+  width: 100px;
+  height: 6px;
+  transform: rotateX(90deg);
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  background-image: linear-gradient(270deg, #ccc 14px, transparent 0);
+  background-repeat: repeat-x;
+  background-size: 20px 6px;
+  background-position: 0 0;
+  animation: q .5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes q {
+    0% {
+        background-position: 0 0
+    }
+    to {
+        background-position: -20px 0
+    }
 }
