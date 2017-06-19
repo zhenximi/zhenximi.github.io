@@ -38,7 +38,7 @@ $(window).load(function() {
   $("body").removeClass("preload");
 });
 
-//Fix the problem with menu didn't collapse after clicked 
+//Fix the problem with menu didn't collapse after clicked
 $(document).ready(function () {
   $(".navbar-nav li a").click(function(event) {
     $(".navbar-collapse").collapse('hide');
@@ -79,7 +79,7 @@ $(window).scroll(function(){
   if ($(window).scrollTop() < $(window).height()*0.7) {
   $('#frontpage').css({
     'transform' : 'translate(0px, -'+ wScroll /5+'%)'
-  });    
+  });
   }
 });
 
@@ -97,14 +97,14 @@ $(window).bind('scroll', function () {
             $("#design").removeClass('top-offset');
             // $('#logo').removeClass('logo-fix');
         }
-  }     
+  }
 });
 
 $(function() {
   var mywindow1 = $("#tapture-project");
   var mypos = mywindow1.scrollTop();
   var up = false;
-  var newscroll;  
+  var newscroll;
   mywindow1.scroll(function () {
     newscroll = mywindow1.scrollTop();
       if (newscroll > mypos && !up) {
@@ -123,7 +123,7 @@ $(function() {
   var mywindow2 = $("#shift-project");
   var mypos = mywindow2.scrollTop();
   var up = false;
-  var newscroll; 
+  var newscroll;
   mywindow2.scroll(function () {
     newscroll = mywindow2.scrollTop();
       if (newscroll > mypos && !up) {
@@ -144,8 +144,8 @@ $(function() {
   var mypos = mywindow3.scrollTop();
   var up = false;
   var newscroll;
-  mywindow3.scroll(function () {    
-    newscroll = mywindow3.scrollTop(); 
+  mywindow3.scroll(function () {
+    newscroll = mywindow3.scrollTop();
       if (newscroll > mypos && !up) {
           $('#wekart-go-top').addClass('hidden');
           up = !up;
@@ -165,8 +165,8 @@ $(function() {
   var mypos = mywindow3.scrollTop();
   var up = false;
   var newscroll;
-  mywindow3.scroll(function () {    
-    newscroll = mywindow3.scrollTop(); 
+  mywindow3.scroll(function () {
+    newscroll = mywindow3.scrollTop();
       if (newscroll > mypos && !up) {
           $('#simple-review-go-top').addClass('hidden');
           up = !up;
@@ -189,11 +189,13 @@ $(function() {
     $(".navbar").on("activate.bs.scrollspy", function(){
         var x = $(".nav li.active > a").text();
         if (x == "ABOUT ME") {
-          $('.navbar').css('background-color', 'transparent'); 
-          $('#nav-toggle').css('border-bottom', '0px solid rgba(3, 3, 3, .85)'); 
+          $('.navbar').css('background-color', 'transparent');
+          $('ul.navbar-nav').children().not('.active').find('a').css('color', '#eee');
+          $('#nav-toggle').css('border-bottom', '0px solid rgba(3, 3, 3, .85)');
         } else {
-          $('.navbar').css('background-color', 'rgba(255, 255, 255, .9)'); 
-          $('#nav-toggle').css('border-bottom', '1px solid rgba(3, 3, 3, .85)'); 
+          $('.navbar').css('background-color', 'rgba(255, 255, 255, .9)');
+          $('ul.navbar-nav').children().find('a').css('color', '#777');
+          $('#nav-toggle').css('border-bottom', '1px solid rgba(3, 3, 3, .85)');
         }
   });
 });
@@ -206,14 +208,14 @@ $(function() {
   var menuOffset = 50; //variable for menu height
   var wheight = $(window).innerHeight(); //get the height of the window
   if ($(window).width() > 768) {
-    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness 
-    $('.fullscreen').css('height', wheight); 
+    $('.fullheight').css('height', wheight - menuOffset); //set to window tallness
+    $('.fullscreen').css('height', wheight);
   } else {
     $("#navbar").addClass('fixed');
     $('.fullheight').css('height', wheight); //set to window tallness
     $('.fullscreen').css('height', wheight);
   }
-  
+
 
 
   //adjust height of .fullheight elements on window resize
@@ -225,7 +227,7 @@ $(function() {
     }
   });
 
-  
+
 });
 
 $(document).ready(function() {
@@ -243,13 +245,13 @@ $(document).ready(function() {
 
 });
 
-// var myVideo1 = $('#player_uid_195758569_1'); 
+// var myVideo1 = $('#player_uid_195758569_1');
 // $('#tapture-button-iphone').hover(function(){
 //     myVideo1.get(0).play();
 //     $('#tapture-button-iphone').addClass('hidden');
 // });
 
-// var myVideo2 = $('#tapture-video-watch'); 
+// var myVideo2 = $('#tapture-video-watch');
 // $('#tapture-button-watch').hover(function(){
 //     myVideo2.get(0).play();
 //     console.log("button is hovered")
