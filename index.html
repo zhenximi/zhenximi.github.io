@@ -56,25 +56,29 @@
 <!-- Above is Google Analytics -->
 
 <script type="text/javascript">
-  //GA Event Tracker Script. Licensed under MIT. Free for any use by all. Written by Paul Seal from codeshare.co.uk
+$(document).ready(function(){
+    //GA Event Tracker Script. Licensed under MIT. Free for any use by all. Written by Paul Seal from codeshare.co.uk
 
-  // Get the category, action and label from the element and send it to GA. The action is optional, because mostly it will be a click event.
-  var trackClickEvent = function () {
-      var eventCategory = this.getAttribute("data-event-category");
-      var eventAction = this.getAttribute("data-event-action");
-      var eventLabel = this.getAttribute("data-event-label");
-      var eventValue = this.getAttribute("data-event-value");
-      ga('send', 'event', eventCategory, (eventAction != undefined && eventAction != '' ? eventAction : 'click'), eventLabel, eventValue);
-  };
+    // Get the category, action and label from the element and send it to GA. The action is optional, because mostly it will be a click event.
+    console.log("loaded event tracker");
+    var trackClickEvent = function () {
+        var eventCategory = this.getAttribute("data-event-category");
+        var eventAction = this.getAttribute("data-event-action");
+        var eventLabel = this.getAttribute("data-event-label");
+        var eventValue = this.getAttribute("data-event-value");
+        ga('send', 'event', eventCategory, (eventAction != undefined && eventAction != '' ? eventAction : 'click'), eventLabel, eventValue);
+        console.log("fire" + eventLabel);
+    };
 
-  // Find all of the elements on the page which have the class 'ga-event'
-  var elementsToTrack = document.getElementsByClassName("ga-event");
+    // Find all of the elements on the page which have the class 'ga-event'
+    var elementsToTrack = document.getElementsByClassName("ga-event");
 
-  // Add an event listener to each of the elements you found
-  var elementsToTrackLength = elementsToTrack.length;
-  for (var i = 0; i < elementsToTrackLength; i++) {
-      elementsToTrack[i].addEventListener('click', trackClickEvent, false);
-  }
+    // Add an event listener to each of the elements you found
+    var elementsToTrackLength = elementsToTrack.length;
+    for (var i = 0; i < elementsToTrackLength; i++) {
+        elementsToTrack[i].addEventListener('click', trackClickEvent, false);
+    }
+});
 </script>
 <!-- <script type="text/javascript">
 window.onbeforeunload = function() { return "Don't leave me, but please click the X button to go back"; };
@@ -83,19 +87,19 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
 <body class="preload">
   <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRBNW2"
+  <!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WRBNW2"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WRBNW2');</script>
+  })(window,document,'script','dataLayer','GTM-WRBNW2');</script> -->
   <!-- End Google Tag Manager -->
-  <div id="landing-page">
+  <div id="landing-page" class="ga-event" data-event-category="Invalid-click-attempt" data-event-label="Paper-plane">
     <div id="bg" class="fixed">
       <div id="city-background">
       </div>
-      <div id="paper-plane" class="ga-event" data-event-category="Invalid-click-attempt" data-event-label="Paper-plane">
+      <div id="paper-plane">
         <div class="animated-plane-wrapper" >
           <div class="animated-plane" >
             <div class="paper-plane" >
