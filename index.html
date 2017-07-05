@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio site for Zhenxi Mi, User Experience Designer and Interaction Designer.">
+  <meta name="description" content="Portfolio site for Zhenxi Mi, User Experience Designer, Interaction Designer, and Front-end Developer.">
   <meta name="keywords" content="UX Design, User-Centered Design, User Experience, Portfolio, IxD, Usability, MHCI+D, Artist, CEAC, University of Washington, Xiamen University">
   <meta name="author" content="Zhenxi Mi">
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
@@ -28,8 +28,6 @@
     $(".fancybox").fancybox();
   });
   </script>
-  <!-- <script async src='https://pepper.swat.io/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiJGNjcyODAiLCJpY29uIjoicGFjbWFuIiwiaW50cm9UZXh0IjoiTGlrZSBUbyBEZXNpZ24gRGVsaWdodGZ1bCBVc2VyIEV4cGVyaWVuY2U/XG5MZXQncyBDaGF0ISIsImNoYW5uZWxzIjpbWyJ0d2l0dGVyIiwiemhlbnhpbWkiLCJzb2NpYWwiXSxbImdpdGh1YiIsImh0dHBzOi8vZ2l0aHViLmNvbS96aGVueGltaSIsInNvY2lhbCJdLFsicGhvbmUiLCIrMSAoNDA4KSA5MTUtNTMzOCIsImNsYXNzaWMiXSxbImVtYWlsIiwiemhlbnhpLm1pQGdtYWlsLmNvbSIsImNsYXNzaWMiXV19'></script> -->
-  <!-- above code is created by https://pepper.swat.io/ -->
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <script src="js/myscripts.js"></script>
@@ -55,7 +53,29 @@
   ga('send', 'pageview');
 
 </script>
+<!-- Above is Google Analytics -->
 
+<script type="text/javascript">
+  //GA Event Tracker Script. Licensed under MIT. Free for any use by all. Written by Paul Seal from codeshare.co.uk
+
+  // Get the category, action and label from the element and send it to GA. The action is optional, because mostly it will be a click event.
+  var trackClickEvent = function () {
+      var eventCategory = this.getAttribute("data-event-category");
+      var eventAction = this.getAttribute("data-event-action");
+      var eventLabel = this.getAttribute("data-event-label");
+      var eventValue = this.getAttribute("data-event-value");
+      ga('send', 'event', eventCategory, (eventAction != undefined && eventAction != '' ? eventAction : 'click'), eventLabel, eventValue);
+  };
+
+  // Find all of the elements on the page which have the class 'ga-event'
+  var elementsToTrack = document.getElementsByClassName("ga-event");
+
+  // Add an event listener to each of the elements you found
+  var elementsToTrackLength = elementsToTrack.length;
+  for (var i = 0; i < elementsToTrackLength; i++) {
+      elementsToTrack[i].addEventListener('click', trackClickEvent, false);
+  }
+</script>
 <!-- <script type="text/javascript">
 window.onbeforeunload = function() { return "Don't leave me, but please click the X button to go back"; };
 </script> -->
@@ -75,7 +95,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
     <div id="bg" class="fixed">
       <div id="city-background">
       </div>
-      <div id="paper-plane">
+      <div id="paper-plane" class="ga-event" data-event-category="Page element click attempt" data-event-label="Paper plane">
         <div class="animated-plane-wrapper" >
           <div class="animated-plane" >
             <div class="paper-plane" >
