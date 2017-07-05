@@ -167,12 +167,12 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
         </div><!-- navbar-header -->
         <div class="collapse navbar-collapse" id="collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#frontpage" onClick="ga('send', 'pageview', '/virtual/home');">HOME</a></li>
-            <li><a href="#design">DESIGN</a></li>
+            <li class="active"><a class="ga-event" data-event-category="nav-click" data-event-label="Home" href="#frontpage">HOME</a></li>
+            <li><a class="ga-event" data-event-category="nav-click" data-event-label="Design" href="#design">DESIGN</a></li>
             <!-- <li class="disabled" ><a href="#fine-arts">FINE ARTS</a></li> -->
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="zhenxi_ux_designer_resume.pdf">RESUME</a></li>
-            <li><a href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">CONTACT</a></li>
+            <li><a class="ga-event" data-event-category="nav-click" data-event-label="About-me" href="#about">ABOUT ME</a></li>
+            <li><a class="ga-event" data-event-category="nav-click" data-event-label="Resume" href="zhenxi_ux_designer_resume.pdf">RESUME</a></li>
+            <li><a  class="ga-event" data-event-category="nav-click" data-event-label="Contact" href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">CONTACT</a></li>
           </ul>
         </div><!-- collapse navbar-collapse -->
       </div><!-- container -->
@@ -184,7 +184,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-6 col-md-6 col-sm-12">
         <div class="project-cover" id="shift">
-          <a href="#shift-project" class="project-link" data-toggle="modal">
+          <a href="#shift-project" class="project-link ga-event" data-event-category="project-click" data-event-label="Shift" data-toggle="modal">
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Shift</h1>
@@ -198,7 +198,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-6 col-md-6 col-sm-12">
         <div class="project-cover" id="tapture">
-          <a href="#tapture-project" class="project-link" data-toggle="modal" id="tapture-page">
+          <a href="#tapture-project" class="project-link ga-event" data-event-category="project-click" data-event-label="tapure" data-toggle="modal" id="tapture-page">
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Tapture</h1>
@@ -212,7 +212,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-6 col-md-6 col-sm-12  ">
         <div class="project-cover" id="wekart">
-          <a href="#wekart-project" class="project-link" data-toggle="modal" >
+          <a href="#wekart-project" class="project-link ga-event" data-event-category="project-click" data-event-label="wekart" data-toggle="modal" >
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Wekart</h1><br>
@@ -227,7 +227,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-6 col-md-6 col-sm-12">
         <div class="project-cover " id="simple-review">
-          <a href="#simple-review-project-building" class="project-link" data-toggle="modal">
+          <a href="#simple-review-project-building" class="project-link ga-event" data-event-category="project-click" data-event-label="simple-review" data-toggle="modal">
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Simple Review</h1>(Coming Soon)<br>
@@ -241,7 +241,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-4 col-md-4 col-sm-6">
         <div class="project-cover" id="blob">
-          <a href="blob.html" class="project-link" >
+          <a href="blob.html" class="project-link ga-event" data-event-category="project-click" data-event-label="blob" >
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Tapture</h1>
@@ -255,7 +255,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-4 col-md-4 col-sm-6">
         <div class="project-cover" id="mhcid-web">
-          <a href="mhcid-web.html" class="project-link" >
+          <a href="mhcid-web.html" class="project-link ga-event" data-event-category="project-click" data-event-label="mhcid-web" >
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Tapture</h1>
@@ -269,14 +269,14 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
       <div class="showcase col-lg-4 col-md-4 col-sm-6">
         <div class="project-cover" id="canvas">
-          <a href="canvas.html" class="project-link" >
+          <a href="canvas.html" class="project-link ga-event" data-event-category="project-click" data-event-label="canvas" >
             <div class="project-info">
               <div class="text-wrap">
                 <span><h1>Tapture</h1>
                 Title Synopsis</span>
               </div>
             </div><!-- project-info -->
-            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Project Tempture">
+            <img class="img-responsive lazyload" data-src="images/placeholder.png" alt="Canvas redesign">
           </a>
         </div><!-- project-cover -->
       </div><!-- showcase -->
@@ -299,7 +299,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
         <p>Three-quarters designer, and one-quarter front-end developer, with 2 years experience in UX/UI design and front-end development, and 3 years of working experience as a project manager for innovative design projects.</p>
         <p>I’m a problem-solver breaking down complexity to deliver simple but efficient user experience; I'm a team player, thriving on collaborative and creative jobs, work well with cross-functional teams by effective communication and shared understanding.</p>
         <p>With the User-Centered Design skills I developed from the experience in handling complex enterprise applications UX/UI design and delivering simple yet customizable, efficient and scalable user experience, my Master Degree of Human-Computer Interaction + Design at UW, as well as my passions in technology, art, and people, I’m competent to design delightful user experiences.</p>
-        <p>Please check my <a href="zhenxi_ux_designer_resume.pdf" target=">blank"><strong>RESUME</strong></a> for more about me.</p>
+        <p>Please check my <a class="ga-event" data-event-category="nav-click" data-event-label="Resume-in-about-me" href="zhenxi_ux_designer_resume.pdf" target="_blank"><strong>RESUME</strong></a> for more about me.</p>
       </div>
 
     </div><!-- row -->
@@ -333,15 +333,15 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
   <footer>
     <div class="container-fluid">
       <div class="pull-left copyright text-center">
-        <span class="hidden-xs">Designed and built by </span><a href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
+        <span class="hidden-xs">Designed and built by </span><a class="ga-event" data-event-category="home-footer-click" data-event-label="email" href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
       </div> <!-- pull-left copyright -->
       <div class="social-links">
         <ul class="social-links pull-right">
-          <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span id="linkedin_icon"></span></a></li>
-          <!-- <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span id="facebook_icon"></span></a></li> -->
-          <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span id="pinterest_icon"></span></a></li>
-          <li><a href="https://github.com/zhenximi" class="github">Github<span id="github_icon"></span></a></li>
-          <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span id="medium_icon"></span></a></li>
+          <li><a class="ga-event" data-event-category="home-footer-click" data-event-label="LinkedIn" href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span id="linkedin_icon"></span></a></li>
+          <!-- <li><a class="ga-event" data-event-category="home-footer-click" data-event-label="Facebook" href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span id="facebook_icon"></span></a></li> -->
+          <li><a class="ga-event" data-event-category="home-footer-click" data-event-label="Pinterest" href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span id="pinterest_icon"></span></a></li>
+          <li><a class="ga-event" data-event-category="home-footer-click" data-event-label="Github" href="https://github.com/zhenximi" class="github">Github<span id="github_icon"></span></a></li>
+          <li><a class="ga-event" data-event-category="home-footer-click" data-event-label="Medium" href="https://medium.com/@zhenximi" class="medium">Medium<span id="medium_icon"></span></a></li>
         </ul>
       </div> <!-- pull-right social-links -->
     </div>
@@ -351,7 +351,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
   <!-- Tapture-project -->
   <div class="project-modal modal fade" id="tapture-project" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content" id="tapture-top">
-      <div class="close-modal" data-dismiss="modal">
+      <div class="close-modal ga-event" data-event-category="close-project" data-event-label="tapure" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
           </div>
@@ -606,23 +606,23 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
 
       <div class="hidden" id="tapture-go-top">
-        <a href="#tapture-top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
+        <a class="ga-event" data-event-category="nav-click" data-event-label="tapure-go-top" href="#tapture-top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
       </div>
       <footer>
         <div class="container-fluid">
-          <div class="col-lg-6 col-md-6 col-sm-12 pull-left copyright">
-            Designed and built by <a href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
+          <div class="pull-left copyright text-center">
+            <span class="hidden-xs">Designed and built by </span><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="email" href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
           </div> <!-- pull-left copyright -->
-          <div class="col-lg-6 col-md-6 col-sm-12 social-links">
+          <div class="social-links">
             <ul class="social-links pull-right">
-              <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
-              <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
-              <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span></span></a></li>
-              <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
-              <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
+              <li><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="LinkedIn" href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span id="linkedin_icon"></span></a></li>
+              <!-- <li><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="Facebook" href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span id="facebook_icon"></span></a></li> -->
+              <li><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="Pinterest" href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span id="pinterest_icon"></span></a></li>
+              <li><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="Github" href="https://github.com/zhenximi" class="github">Github<span id="github_icon"></span></a></li>
+              <li><a class="ga-event" data-event-category="tapture-footer-click" data-event-label="Medium" href="https://medium.com/@zhenximi" class="medium">Medium<span id="medium_icon"></span></a></li>
             </ul>
           </div> <!-- pull-right social-links -->
-        </div> <!-- container-fluid -->
+        </div>
       </footer>
     </div><!-- modal-content -->
   </div> <!-- project-modal modal fade -->
@@ -630,7 +630,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
   <!-- Shift-project -->
   <div class="project-modal modal fade" id="shift-project" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content" id="shift-top">
-      <div class="close-modal" data-dismiss="modal">
+      <div class="close-modal ga-event" data-event-category="close-project" data-event-label="shift" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
           </div>
@@ -649,7 +649,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
       </div>
       <div><h2 class="text-center"><strong class="bottom-border-yellow">Featured ustwo Blog Post</strong></h2></div>
       <div class="container row-padding">
-        <a href="https://ustwo.com/blog/texting-and-driving-washington-uni" target="_blank"><img class="center-block lazyload img-responsive" data-src="images/ustwo_blog.jpg" alt="Guest blog at ustwo"></a>
+        <aclass="ga-event" data-event-category="nav-click" data-event-label="ustwo-blog" href="https://ustwo.com/blog/texting-and-driving-washington-uni" target="_blank"><img class="center-block lazyload img-responsive" data-src="images/ustwo_blog.jpg" alt="Guest blog at ustwo"></a>
       </div>
       <div class="container row-padding">
         <img class="img-responsive center-block lazyload" data-src="images/drive_mode.jpg" alt="drive mode features, tell senders you are driving, defer notivications until done, sender can choose notify now." >
@@ -975,23 +975,23 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
       </div> <!-- container-fluid -->
 
       <div class="hidden" id="shift-go-top">
-        <a href="#shift-top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
+        <a class="ga-event" data-event-category="shift-footer-click" data-event-label="shift-go-top" href="#shift-top"><span class="glyphicon glyphicon-circle-arrow-up pull-right bounceUp"></span></a>
       </div>
       <footer>
         <div class="container-fluid">
-          <div class="col-lg-6 col-md-6 col-sm-12 pull-left copyright">
-            Designed and built by <a href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
+          <div class="pull-left copyright text-center">
+            <span class="hidden-xs">Designed and built by </span><a class="ga-event" data-event-category="shift-footer-click" data-event-label="email" href="mailto:zhenxi.mi@gmail.com?subject=mail from portfolio site">Zhenxi Mi</a> &copy; 2017
           </div> <!-- pull-left copyright -->
-          <div class="col-lg-6 col-md-6 col-sm-12 social-links">
+          <div class="social-links">
             <ul class="social-links pull-right">
-              <li><a href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span></span></a></li>
-              <li><a href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span></span></a></li>
-              <li><a href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span></span></a></li>
-              <li><a href="https://github.com/zhenximi" class="github">Github<span></span></a></li>
-              <li><a href="https://medium.com/@zhenximi" class="medium">Medium<span></span></a></li>
+              <li><a class="ga-event" data-event-category="shift-footer-click" data-event-label="LinkedIn" href="http://www.linkedin.com/in/zhenxi" class="linkedin">Linkedin<span id="linkedin_icon"></span></a></li>
+              <!-- <li><a class="ga-event" data-event-category="shift-footer-click" data-event-label="Facebook" href="https://www.facebook.com/mi.zhenxi" class="facebook">Facebook<span id="facebook_icon"></span></a></li> -->
+              <li><a class="ga-event" data-event-category="shift-footer-click" data-event-label="Pinterest" href="https://www.pinterest.com/mizhenxi" class="pinterest">Pinterest<span id="pinterest_icon"></span></a></li>
+              <li><a class="ga-event" data-event-category="shift-footer-click" data-event-label="Github" href="https://github.com/zhenximi" class="github">Github<span id="github_icon"></span></a></li>
+              <li><a class="ga-event" data-event-category="shift-footer-click" data-event-label="Medium" href="https://medium.com/@zhenximi" class="medium">Medium<span id="medium_icon"></span></a></li>
             </ul>
           </div> <!-- pull-right social-links -->
-        </div> <!-- container-fluid -->
+        </div>
       </footer>
     </div><!-- modal-content -->
   </div><!-- project-modal modal fade -->
@@ -1000,7 +1000,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 <!-- Wekart-project -->
   <div class="project-modal modal fade" id="wekart-project" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content" id="wekart-top">
-      <div class="close-modal" data-dismiss="modal">
+      <div class="close-modal ga-event" data-event-category="close-project" data-event-label="wekart" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
           </div>
@@ -1290,7 +1290,7 @@ window.onbeforeunload = function() { return "Don't leave me, but please click th
 
   <div class="project-modal modal fade" id="simple-review-project" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content" id="simple-review-top">
-      <div class="close-modal" data-dismiss="modal">
+      <div class="close-modal ga-event" data-event-category="close-project" data-event-label="simple-review" data-dismiss="modal">
         <div class="lr">
           <div class="rl">
           </div>
