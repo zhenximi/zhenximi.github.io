@@ -752,6 +752,11 @@ footer {
   padding: 0 0;
 }
 
+.baby-blue {
+  background-color: rgba(179, 223, 242, 1);
+  padding: 0 0;
+}
+
 .light-yellow {
   background-color: rgba(245, 211, 42, .75);
   padding: 0 0;
@@ -900,6 +905,28 @@ footer {
 
 #wekart-top {
   padding: 0;
+}
+
+#simple-review-project .left-border h2,
+#simple-review-project .left-border-baby-blue h2
+ {
+  line-height: 150%;
+}
+
+#simple-review-project .left-border {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+#simple-review-project .left-border-baby-blue {
+  border-left-color: rgba(179, 223, 242, 1);
+  border-left-style: solid;
+  border-left-width: 5px;
+  border-radius: 3px;
+  padding-left: 5px;
 }
 
 .bottom-offset {

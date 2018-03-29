@@ -71,6 +71,15 @@ $(function() {
   });
 });
 
+$("a.grouped_elements").fancybox({
+         helpers : {
+             thumbs: {
+                 width: 50,
+                height: 50,
+            }
+         }
+     });
+
 //fix modal can't scroll with arrow up and down
 $('.modal a:first-child').focus();
 
